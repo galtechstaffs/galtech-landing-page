@@ -389,7 +389,7 @@ header{
 .column-box{
     padding: 20px 20px;
     border:2px solid  var(--gray2);
-    margin: 0 10px;
+    margin: 10px;
     border-radius: 6px;
     position: relative;
 }
@@ -414,6 +414,9 @@ header{
     align-items: center;
     gap: 10px;
     transform:  skew(-6deg);
+}
+.overview .col-4:nth-child(even) .column-box{
+    margin-top: -20px;
 }
 .overview .column-box > div{
     display: flex;
