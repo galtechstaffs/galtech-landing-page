@@ -48,7 +48,10 @@ header{
     height: 75px;
     transition: .3s;
 }
-
+.textContainer {
+    max-height: 100%;
+    overflow: hidden;
+  }
 
 .scroll-start  .fixed-contact > div{
     padding: 12px 5px 12px 5px;
@@ -1063,6 +1066,8 @@ div#modal-container {
     position: absolute!important;
     right: 30px;
     top: 30px;
+    color: var(--white);
+    font-size: 30px;
 }
 
 
