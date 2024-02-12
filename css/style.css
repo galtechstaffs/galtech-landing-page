@@ -707,6 +707,8 @@ header{
   .text-down { 
     position:relative; 
     overflow:hidden;
+    border: 2px solid var(--gray2);
+    border-radius: 10px;
   }
   .text-down img{ 
     width:100%; 
@@ -716,21 +718,18 @@ header{
 
   .text-down .textbox { 
     width:100%; 
-    height:300px; 
+    height:100%; 
     position:absolute; 
-    top:0; 
+    bottom:0; 
     left:0; 
-    margin-top:-255px;
-    -webkit-border-radius:50px; 
-    -moz-border-radius:50px; 
-    -ms-border-radius:50px; 
+    margin-bottom:-265px;
     border-radius:5px;
-    background-color: #d51c2373; 
+    background-color: #404249c9; 
     -webkit-transition: all 0.7s ease; 
-    transition: all 0.7s ease; 
+    transition: all 0.4s ease; 
   }
   .text-down:hover .textbox { 
-    margin-top:0;
+    margin-bottom:0;
   }
   .details{ 
     width:100%; 
@@ -749,6 +748,15 @@ header{
     color:rgba(255,255,255,1); 
     margin: 0;
     padding-bottom: 5px;
+    padding-top: 10px;
+
+    position: relative;
+    margin-top: -10px;
+
+  }
+  .text-down:hover .text { 
+
+    background-color: #404249;
   }
   .choose-row{
     margin-left: -15px;
@@ -842,7 +850,7 @@ header{
     height: 100%;
     float: left;
     z-index: 1;
-    opacity: .7;
+    opacity: .9;
 }
 
 .testimonial {
@@ -974,3 +982,160 @@ header{
 }
 
 /* footer end */
+
+/* flip card start */
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    border-radius:10px;
+    overflow: hidden;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  
+  .flip-card:focus {
+      outline: 0;
+  }
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+  }
+  
+  .flip-card-front {
+    background:  linear-gradient(to left, #191919, #5d5d5d);
+    color: black;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .flip-card-front:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    opacity: .3;
+}
+  .flip-card-front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .flip-card-back {
+    background: linear-gradient(to left, #191919, #5d5d5d);
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-card-front h3{
+    z-index: 99;
+    font-size: 24px;
+  }
+
+
+/* flip card end */
+
+  /* join start */
+.join-row{
+    margin-top: 60px;
+}
+.join-card{
+    display: flex;
+    align-items: center;
+    max-width: 850px;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px;
+        border: 1px solid  var(--gray2);
+    border-radius: 25px;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    box-sizing: border-box;
+
+}
+.join-card:not(:last-child) {
+    margin-bottom: 40px;
+}   
+.join-card:nth-child(even){
+    float: right;
+    flex-direction: row-reverse;
+}
+.join-card:not(:first-child)::before {
+        content: '';
+        position: absolute;
+        bottom: -50%;
+        left: -140px;
+        width: 140px;
+        height: calc(100% + 25px);
+        background: url(../images/arrow-shape.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(-50%);
+        filter: brightness(0) invert(1);
+}
+.join-card:not(:first-child):nth-of-type(odd):before {
+    right: -140px;
+    left: auto;
+    transform: scaleX(-1);
+    top: -50%;
+    bottom: auto;
+    background-position: left;
+    margin-top: 20px;
+}
+.join-card-img{
+    width: 180px;
+}
+.join-card-img img{
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+}
+.join-card-content{
+    width: calc(100% - 220px);
+}
+.join-card span{
+    position: relative;
+}
+.join-card span:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--red);
+    height: 3px;
+    width: 25px;
+}
+/* join end */
