@@ -326,7 +326,7 @@ header{
     background: linear-gradient(90deg, var(--red) -4.46%, rgb(255 145 141 / 13%) 66.67%);
     filter: blur(40px);
     animation: shape1 8s infinite;
-    opacity: .3;
+    opacity: .5;
 }
 @keyframes shape1 {
     0% {

@@ -317,7 +317,7 @@ a:hover {
 .pt-5 {
     padding-top: 35px;
 }
-@media (min-width: 1400px){
+@media (min-width: 1440px){
     .container {
         max-width: 1380px;
     }
