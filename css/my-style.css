@@ -15,6 +15,7 @@ body, html {
     font-family: 'Poppins', sans-serif;
    scroll-behavior: smooth;
 }
+
 :root {
 
 	--red: #d51c23;
@@ -24,6 +25,9 @@ body, html {
     --border: #ececec;
     --gray: #e9e9e9;
     --gray2: #e9e9e93b;
+
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
 
 
 }

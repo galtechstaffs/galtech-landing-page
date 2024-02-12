@@ -420,8 +420,8 @@ header{
 
 }
 .scrolling-text__item img{
-    width: 240px;
-    height: 160px;
+    width: 180px;
+    height: 110px;
     object-fit: contain;
 }
 .scrolling-text__item:empty {
@@ -684,7 +684,7 @@ header{
   /* border-top:1px solid #303030; */
 }
 .each-accordionbox.active .each-title{
-  border-bottom:1px solid #ccc;
+  border-bottom:1px solid var(--gray2);
 }
 .each-accordionbox.active::before{
     content:'-';
@@ -719,41 +719,50 @@ header{
   .text-down { 
     position:relative; 
     overflow:hidden;
-    border: 2px solid var(--gray2);
-    border-radius: 10px;
+    /* border: 2px solid var(--gray2); */
+    border-radius: 12px;
+    overflow: hidden;
   }
   .text-down img{ 
     width:100%; 
-    height:200px;
+    height:240px;
     object-fit: cover;
   }
 
   .text-down .textbox { 
     width:100%; 
-    height:100%; 
     position:absolute; 
     bottom:0; 
     left:0; 
-    margin-bottom:-265px;
+    /* margin-bottom:-265px; */
     border-radius:5px;
-    background-color: #404249c9; 
+    background: linear-gradient(1deg, var(--black), var(--black), transparent); 
     -webkit-transition: all 0.7s ease; 
     transition: all 0.4s ease; 
+    padding: 20px;
   }
   .text-down:hover .textbox { 
     margin-bottom:0;
   }
+  .text-down img{
+    scale: 1.1;
+    transition: .4s;
+  }
+  .text-down:hover img{
+    scale: 1.2;
+    transition: .4s;
+  }
   .details{ 
     width:100%; 
-    padding: 30px 30px 0;  
-    text-align:center; 
     color:rgba(255,255,255,1); 
     font-size:16px;
-    font-family: 'Raleway-Light', sans-serif; 
-    height: 170px;
     overflow: auto;
+    display: none;
+    text-align: center;
   }
-
+  .text-down:hover   .details{
+    display: block;
+  }
   .text { 
     text-align:center; 
     padding-top: 0px; 
@@ -766,10 +775,7 @@ header{
     margin-top: -10px;
 
   }
-  .text-down:hover .text { 
 
-    background-color: #404249;
-  }
   .choose-row{
     margin-left: -15px;
     margin-right: -15px;
@@ -817,7 +823,8 @@ header{
     height: 100%;
     float: left;
     z-index: 1;
-    opacity: .9;
+    opacity: .8;
+
 }
 
 .testimonial {
@@ -828,6 +835,7 @@ header{
     padding-bottom: 50px;
     background-position: center;
         background-size: cover;
+        background-attachment: fixed;
 }
 .testimonial *{
     z-index: 9;
@@ -950,89 +958,6 @@ header{
 
 /* footer end */
 
-/* flip card start */
-
-.flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 300px;
-    perspective: 1000px;
-    border-radius:10px;
-    overflow: hidden;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  }
-  
-  .flip-card:focus {
-      outline: 0;
-  }
-  
-  .flip-card:hover .flip-card-inner,
-  .flip-card:focus .flip-card-inner{
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-  }
-  
-  .flip-card-front {
-    background:  linear-gradient(to left, #191919, #5d5d5d);
-    color: black;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  .flip-card-front:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 1;
-    opacity: .3;
-}
-  .flip-card-front img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .flip-card-back {
-    background: linear-gradient(to left, #191919, #5d5d5d);
-    color: white;
-    transform: rotateY(180deg);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .flip-card-front h3{
-    z-index: 99;
-    font-size: 24px;
-  }
-
-
-/* flip card end */
 
   /* join start */
 .join-row{
@@ -1145,6 +1070,9 @@ div#modal-container {
 
 
   /* modal content start */
+  .open{
+    overflow: hidden;
+  }
   .ring {
     position: relative;
     width: 600px;
@@ -1172,8 +1100,8 @@ div#modal-container {
     animation: animate2 10s linear infinite;
   }
   .ring:hover i {
-    border: 6px solid var(--clr);
-    filter: drop-shadow(0 0 20px var(--clr));
+    border: 3px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--red));
   }
   @keyframes animate {
     0% {
@@ -1238,3 +1166,152 @@ div#modal-container {
     text-decoration: none;
   }
   
+
+
+  /* cards start */
+
+
+
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 350px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: url(https://img.freepik.com/free-photo/full-shot-smiley-students-library_23-2149647046.jpg);
+}
+.card:nth-child(2):before {
+  background-image: url(https://media.istockphoto.com/id/1371896330/photo/happy-asian-woman-in-his-graduation-day.webp?b=1&s=170667a&w=0&k=20&c=apaOUEdB5N5xYWUstQ5eVbmUHJtq9urMK68CTF0XNbk=);
+}
+.card:nth-child(3):before {
+  background-image: url(https://www.avivaindia.com/sites/default/files/9%20to%205.jpg);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+
+  /* cards end */
