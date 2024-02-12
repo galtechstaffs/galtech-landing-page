@@ -1204,7 +1204,8 @@ div#modal-container {
 }
 @media (min-width: 600px) {
   .card {
-    height: 350px;
+    height: 250px;
+    border-radius: 26px;
   }
 }
 .card:before {
