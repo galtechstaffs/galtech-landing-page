@@ -21,16 +21,46 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
 
 </head>
 
 <body class="body">
 
-
+	<div id="modal-container">
+		<a href="#" class="btn-site2 close-btn btn-modal">Close</a>
+		<div class="modal-background">
+		  <div class="modal">
+			<!--ring div starts here-->
+				<div class="ring">
+					<i style="--clr:#00ff0a;"></i>
+					<i style="--clr:#ff0057;"></i>
+					<i style="--clr:#fffd44;"></i>
+					<div class="login">
+						<h2>Free Consultation</h2>
+						<div class="inputBx">
+							<input type="text" placeholder="Full name">
+						</div>
+						<div class="inputBx">
+							<input type="text" placeholder="Email address">
+						</div>
+						<div class="inputBx">
+							<input type="text" placeholder="Phone Number">
+						</div>
+						<div class="inputBx">
+							<textarea  placeholder="Message"></textarea>
+						</div>
+						<div class="inputBx">
+							<a type="submit"  class="btn-site btn-anim" style="width: 100%; justify-content:center;">Submit</a>
+						</div>
+					
+					</div>
+				</div>
+				<!--ring div ends here-->
+		  </div>
+		</div>
+	  </div>
 
 	<header>
 		<ul class="social_icons">
@@ -71,7 +101,7 @@
 				<div class="nav">
 					<a href="" class="nav-items">+44 7883 307 196</a>
 					<!-- <a href="" class="nav-items">Login</a> -->
-					<a href="" class="btn-site btn-anim">Connect</a>
+					<a id="two" class="btn-site btn-anim button btn-modal">Connect</a>
 				</div>
 			</div>
 
@@ -80,7 +110,7 @@
 
 
 	<div class="site-body">
-		<div class="hero-sec">
+		<div class="hero-sec"  id="top">
 			<div class="container hero-container">
 				<div class="hero-left">
 					<div class="shape1"></div>
@@ -95,7 +125,7 @@
 
 					</ul>
 					<div class="btn-container">
-						<a class="btn-site btn-anim">Get in Touch
+						<a id="four" class="btn-site btn-anim button btn-modal">Get in Touch
 						</a>
 						<a class="btn-site2 btn-anim2"><i class="fa fa-download"></i>Download Brochure
 						</a>
@@ -242,7 +272,7 @@
 			</div>
 		</div>
 		<div class="marquee-sec scrolling-text my-40" >
-			<div class="scrolling-text_inner direction-left" style="--marquee-speed: 50s;">
+			<div class="scrolling-text_inner direction-left" style="--marquee-speed: 30s;">
 				<div>
 					<div class="scrolling-text__item">
 						<img src="images/react.webp">
@@ -423,7 +453,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row choose-row mt-4">
+				<!-- <div class="row choose-row mt-4">
 					<div class="col-md-4">
 						<div class="flip-card" tabIndex="0">
 							<div class="flip-card-inner">
@@ -464,7 +494,7 @@
 						  </div>
 					</div>
   
-				</div>
+				</div> -->
 				     
 				
 				
@@ -473,66 +503,7 @@
 			</div>
 		</div>
 		
-		<!-- <div  class="section next">
-			<div class="container">
-				<div class="head">
-					<h5 class="sub-head text-center">Placements</h5>
-					<h1 class="heading text-center">
-						Stacks<span style="color: var(--red);">  Covered</span>
-					</h1>
-				</div>
-
-				<section id="horizontal-scoll">
-					<div class="horizontal-scoll-wrapper">
-						<div class="horizontal">
-							<div class="column-box2">
-								<div>
-									<h5>First Month</h5>
-									<h6>HTML, CSS, JavaScript, jQuery, Bootstrap</h6>
-									<p style="opacity: .7;">Within the first month of our full-stack developer training course, you may research the fundamentals of web development technologies. You will learn about HTML5, the markup language used for structuring and offering content material on the web. You will also learn about CSS3, the stylesheet language used for describing the appearance and formatting of a document written in HTML. You'll additionally find out about responsive design, a design approach that ensures that a website's layout and content are optimized for viewing on any device, regardless of screen size or resolution. In addition, you may analyze the fundamentals of JavaScript, a programming language commonly used to feature interactivity to web pages.</p>
-								</div>
-	
-							</div>
-							<div class="column-box2">
-								<div>
-									<h5>Second Month</h5>
-									<h6>PHP, Ajax, MySQL, Laravel, WordPress React JS</h6>
-									<p style="opacity: .7;">Throughout the 2nd month of full-stack training, you may develop upon your knowledge of JavaScript and web development. You will research advanced techniques for working with JavaScript, using APIs (Application Programming Interfaces) to integrate additional systems and offerings. You might also examine the basics of WordPress, a prominent content management system used for creating as well as operating websites. Further, you may be introduced to ReactJS, a popular JavaScript library for building user interfaces..</p>
-								</div>
-	
-							</div>
-							<div class="column-box2">
-								<div>
-									<h5>Third Month</h5>
-									<h6>React JS and Live Projects</h6>
-									<p style="opacity: .7;">Inside the third month of education, you'll concentrate on advanced techniques for running with ReactJS. You will discover ways to optimize the overall performance of React programs and how to scale them to satisfy the desires of larger tasks. You'll additionally have the opportunity to apply your skills in a stay undertaking putting, running on a real-global assignment under the guidance of experienced developers. This could provide you with the chance to position your talents into practice and benefit from realistic experience in a professional setting.</p>
-								</div>
-	
-							</div>
-							<div class="column-box2">
-								<div>
-									<h5>Fourth Month</h5>
-									<h6>HTML, CSS, JavaScript, jQuery, Bootstrap</h6>
-									<p style="opacity: .7;">Within the first month of our full-stack developer training course, you may research the fundamentals of web development technologies. You will learn about HTML5, the markup language used for structuring and offering content material on the web. You will also learn about CSS3, the stylesheet language used for describing the appearance and formatting of a document written in HTML. You'll additionally find out about responsive design, a design approach that ensures that a website's layout and content are optimized for viewing on any device, regardless of screen size or resolution. In addition, you may analyze the fundamentals of JavaScript, a programming language commonly used to feature interactivity to web pages.</p>
-								</div>
-	
-							</div>
-							<div class="column-box2">
-								<div>
-									<h5>Fifth Month</h5>
-									<h6>HTML, CSS, JavaScript, jQuery, Bootstrap</h6>
-									<p style="opacity: .7;">Within the first month of our full-stack developer training course, you may research the fundamentals of web development technologies. You will learn about HTML5, the markup language used for structuring and offering content material on the web. You will also learn about CSS3, the stylesheet language used for describing the appearance and formatting of a document written in HTML. You'll additionally find out about responsive design, a design approach that ensures that a website's layout and content are optimized for viewing on any device, regardless of screen size or resolution. In addition, you may analyze the fundamentals of JavaScript, a programming language commonly used to feature interactivity to web pages.</p>
-								</div>
-	
-							</div>
-							
-
-						</div>
-					</div>
-				</section>
-
-			</div>
-		</div> -->
+		
 		<div  class="section">
 			<div class="container">
 				<div class="head">
@@ -559,7 +530,7 @@
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
 						</div>
 						<div class="join-card-img">
-							<img src="images/join1.png">
+							<img src="images/join2.png">
 	
 						</div>
 					</div>
@@ -569,7 +540,7 @@
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
 						</div>
 						<div class="join-card-img">
-							<img src="images/join1.png">
+							<img src="images/join3.png">
 	
 						</div>
 					</div>
@@ -579,7 +550,7 @@
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
 						</div>
 						<div class="join-card-img">
-							<img src="images/join1.png">
+							<img src="images/join4.png">
 	
 						</div>
 					</div>
@@ -589,7 +560,7 @@
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
 						</div>
 						<div class="join-card-img">
-							<img src="images/join1.png">
+							<img src="images/join5.png">
 	
 						</div>
 					</div>
@@ -810,6 +781,9 @@
 					</div>
 
 				</div>
+				<a class="top-action" href="#top">
+					<img src="images/top-arrow.png">
+				</a>
 
 			</div>
 			<div class="last-footer">
@@ -877,27 +851,22 @@ $(".each-title").on("click",function(){
 </script>
 
 
-
 <script>
-	gsap.registerPlugin(ScrollTrigger);
-  
-	let horizontalSection = document.querySelector('.horizontal');
-  
-	console.log(horizontalSection.scrollWidth);
-  
-	gsap.to('.horizontal', {
-	  x: () => horizontalSection.scrollWidth * -1,
-	  xPercent: 100,
-	  scrollTrigger: {
-		trigger: '.horizontal',
-		start: 'center center',
-		end: '+=2000px',
-		pin: '#horizontal-scoll',
-		scrub: true,
-		invalidateOnRefresh: true
-	  }
+	$(".btn-modal").on('click', function () {
+
+		var selector = $("body")
+
+		if (selector.hasClass('open')) {
+
+			selector.removeClass('open');
+		} else {
+
+			selector.addClass('open');
+		}
 	});
-  </script>
+</script>
+
+
 
 </body>
 

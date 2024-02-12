@@ -644,6 +644,9 @@ a:hover {
     .nav-items {
         font-size: 12px;
     }
+    .scrolling-text__item{
+        height: 110px;
+    }
     .scrolling-text__item img {
         width: 140px;
         height: 110px;
@@ -656,9 +659,12 @@ a:hover {
         font-size: 12px;
         line-height: 22px;
     }
+    .scrolling-text__item{
+        height: 70px;
+    }
     .scrolling-text__item img{
-        width: 160px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
     }
 
 
