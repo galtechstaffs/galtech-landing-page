@@ -1316,3 +1316,77 @@ div#modal-container {
 }
 
   /* cards end */
+
+  /* newsbox start */
+
+  .newsbox {
+    background-color: rgba(255,255,255,.9);
+    position: absolute!important;
+    overflow: unset!important;
+    bottom: 0rem;
+    z-index: 1;
+    right: 1px;
+    width: 360px;
+    padding: 15px;
+    padding-bottom: 1rem;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 6px 8px 20px rgba(0,0,0,.5);
+    transition: all .3s linear;
+      }
+      .scroll-start .newsbox{
+      width: 0;
+      padding: 0;
+      }
+      .newsbox-a {
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -71px;
+        bottom: 2.6rem;
+        background-color: var(--red);
+        padding: 5px 10px;
+        border-radius: 0.3rem 0.3rem 0 0;
+        display: flex;
+        white-space: nowrap;
+    }
+    .newsbox .news-container {
+        max-height: 120px;
+        overflow: hidden;
+        transition: all .3s linear;
+    }
+    .newsbox ul.newslist {
+        position: relative;
+        top: 0;
+        animation: scroll 37s linear 1s infinite;
+        transition: all .7s linear;
+        padding: 0;
+    }
+    
+@keyframes scroll {
+    100% {
+        top: -650px;
+    }
+
+}
+.newsbox ul.newslist li {
+    margin-bottom: 0.3rem;
+    padding-left: 12px;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px dashed rgba(0,0,0,.2);
+    max-height: none;
+    overflow: hidden;
+    line-height: 1.2rem;
+    margin-top: 0.3rem;
+}
+.newsbox ul.newslist li a {
+    display: flex;
+    padding: 5px;
+}
+.newsbox ul.newslist li a:before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: -12px;
+    font-size: 1rem;
+    margin-right: 0.35rem;
+    color: var(--red);
+}
