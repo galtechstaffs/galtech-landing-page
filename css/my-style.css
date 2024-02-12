@@ -415,6 +415,9 @@ a:hover {
 
 }
 @media (max-width: 991px){
+    .newsbox{
+        display: none;
+    }
 
     .logo{
       top: 0;

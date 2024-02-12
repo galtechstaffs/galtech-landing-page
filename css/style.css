@@ -1235,6 +1235,7 @@ div#modal-container {
 }
 .card:nth-child(1):before {
   background-image: url(https://img.freepik.com/free-photo/full-shot-smiley-students-library_23-2149647046.jpg);
+  background-position: center;
 }
 .card:nth-child(2):before {
   background-image: url(https://media.istockphoto.com/id/1371896330/photo/happy-asian-woman-in-his-graduation-day.webp?b=1&s=170667a&w=0&k=20&c=apaOUEdB5N5xYWUstQ5eVbmUHJtq9urMK68CTF0XNbk=);
@@ -1321,22 +1322,25 @@ div#modal-container {
 
   .newsbox {
     background-color: rgba(255,255,255,.9);
-    position: absolute!important;
-    overflow: unset!important;
-    bottom: 0rem;
+    position: fixed;
+    overflow: unset;
+    bottom: 5rem;
     z-index: 1;
     right: 1px;
-    width: 360px;
-    padding: 15px;
+    z-index: 9;
+    
     padding-bottom: 1rem;
     border-radius: 6px 0 0 6px;
     box-shadow: 6px 8px 20px rgba(0,0,0,.5);
     transition: all .3s linear;
-      }
-      .scroll-start .newsbox{
-      width: 0;
+    width: 0;
       padding: 0;
       }
+
+.newsbox:hover{
+        width: 360px;
+        padding: 15px;
+        }
       .newsbox-a {
         transform: rotate(-90deg);
         position: absolute;
@@ -1363,7 +1367,7 @@ div#modal-container {
     
 @keyframes scroll {
     100% {
-        top: -650px;
+        top: -450px;
     }
 
 }
