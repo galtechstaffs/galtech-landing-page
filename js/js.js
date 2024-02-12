@@ -1,1 +1,82 @@
-window.addEventListener('scroll', function(){var a=window.pageYOffset;if(a>=100){document.body.classList.add('scroll-start')}else{document.body.classList.remove('scroll-start')}});document.querySelector(".each-accordionbox:first-child").classList.add("active");document.querySelector(".each-accordionbox:first-child .each-text").style.display="block";document.querySelectorAll(".each-title").forEach(function(a){a.addEventListener("click",function(){var b=this.parentNode,c=this.nextElementSibling;if(b.classList.contains("active")){c.style.display="none";b.classList.remove("active")}else{document.querySelectorAll(".each-text").forEach(function(a){a.style.display="none"});document.querySelectorAll(".each-accordionbox").forEach(function(a){a.classList.remove("active")});b.classList.add("active");c.style.display="block"}})});document.querySelector(".btn-modal").addEventListener('click',function(){var a=document.body;if(a.classList.contains('open')){a.classList.remove('open')}else{a.classList.add('open')}});document.querySelector(".close-btn").addEventListener('click',function(a){a.preventDefault();document.body.classList.remove('open')});document.addEventListener('DOMContentLoaded',function(){var a=document.querySelector('.textContainer'),b=document.querySelector('.viewMoreBtn');a.style.maxHeight='140px';b.addEventListener('click',function(){if(a.style.maxHeight){a.style.maxHeight=null;b.textContent='Read Less'}else{a.style.maxHeight='140px';b.textContent='Read More'}})});
+window.addEventListener('scroll', function () {
+    var scroll = window.pageYOffset;
+
+    if (scroll >= 100) {
+        document.body.classList.add('scroll-start');
+    } else {
+        document.body.classList.remove('scroll-start');
+    }
+});
+
+// var navLinks = document.querySelectorAll('.nav-items');
+// window.addEventListener('scroll', function () {
+//     navLinks.forEach(function (link) {
+//         var targetId = link.getAttribute('href').substring(1);
+//         var targetSection = document.getElementById(targetId);
+//         var rect = targetSection.getBoundingClientRect();
+//         if (rect.top <= 100 && rect.bottom >= 0) {
+//             link.classList.add('active');
+//         } else {
+//             link.classList.remove('active');
+//         }
+//     });
+// });
+
+document.querySelector(".each-accordionbox:first-child").classList.add("active");
+document.querySelector(".each-accordionbox:first-child .each-text").style.display = "block";
+document.querySelectorAll(".each-title").forEach(function (title) {
+    title.addEventListener("click", function () {
+        var accordionBox = this.parentNode;
+        var accordionText = this.nextElementSibling;
+
+        if (accordionBox.classList.contains("active")) {
+            accordionText.style.display = "none";
+            accordionBox.classList.remove("active");
+        } else {
+            document.querySelectorAll(".each-text").forEach(function (text) {
+                text.style.display = "none";
+            });
+            document.querySelectorAll(".each-accordionbox").forEach(function (box) {
+                box.classList.remove("active");
+            });
+            accordionBox.classList.add("active");
+            accordionText.style.display = "block";
+        }
+    });
+});
+
+document.querySelector(".btn-modal").addEventListener('click', function () {
+    var body = document.body;
+
+    if (body.classList.contains('open')) {
+        body.classList.remove('open');
+    } else {
+        body.classList.add('open');
+    }
+});
+
+document.querySelector(".close-btn").addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default action of the link (e.g., navigating to "#")
+    document.body.classList.remove('open');
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var textContainers = document.querySelectorAll('.textContainer');
+    var viewMoreBtns = document.querySelectorAll('.viewMoreBtn');
+
+    textContainers.forEach(function (textContainer, index) {
+        textContainer.style.maxHeight = '137px'; // Initialize the max height
+
+        viewMoreBtns[index].addEventListener('click', function () {
+            if (textContainer.style.maxHeight) {
+                textContainer.style.maxHeight = null;
+                viewMoreBtns[index].textContent = 'Read Less';
+            } else {
+                textContainer.style.maxHeight = '137px';
+                viewMoreBtns[index].textContent = 'Read More';
+            }
+        });
+    });
+});
+
