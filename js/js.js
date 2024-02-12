@@ -62,21 +62,24 @@ document.querySelector(".close-btn").addEventListener('click', function (event) 
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var textContainers = document.querySelectorAll('.textContainer');
-    var viewMoreBtns = document.querySelectorAll('.viewMoreBtn');
+    if (window.innerWidth < 990) {
+        var textContainers = document.querySelectorAll('.textContainer');
+        var viewMoreBtns = document.querySelectorAll('.viewMoreBtn');
 
-    textContainers.forEach(function (textContainer, index) {
-        textContainer.style.maxHeight = '137px'; // Initialize the max height
+        textContainers.forEach(function (textContainer, index) {
+            textContainer.style.maxHeight = '137px'; // Initialize the max height
 
-        viewMoreBtns[index].addEventListener('click', function () {
-            if (textContainer.style.maxHeight) {
-                textContainer.style.maxHeight = null;
-                viewMoreBtns[index].textContent = 'Read Less';
-            } else {
-                textContainer.style.maxHeight = '137px';
-                viewMoreBtns[index].textContent = 'Read More';
-            }
+            viewMoreBtns[index].addEventListener('click', function () {
+                if (textContainer.style.maxHeight) {
+                    textContainer.style.maxHeight = null;
+                    viewMoreBtns[index].textContent = 'Read Less';
+                } else {
+                    textContainer.style.maxHeight = '137px';
+                    viewMoreBtns[index].textContent = 'Read More';
+                }
+            });
         });
-    });
+    }
 });
+
 

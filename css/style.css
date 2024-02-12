@@ -420,6 +420,7 @@ header{
 
 .scrolling-text__item {
     padding: 0 2vw;
+    height: 110px;
 
 }
 .scrolling-text__item img{
@@ -590,7 +591,9 @@ header{
         transform: translate3d(0, 0%, 0);
     }
 }
-
+.marquee-photo_panel:nth-child(3) {
+    animation-delay: 3s;
+}
 .marquee-photo_item {
     /* -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px); */
