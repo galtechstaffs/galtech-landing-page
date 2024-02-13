@@ -660,13 +660,16 @@ header{
 }
 .each-accordionbox{
   margin:0px;
-  padding:15px 0px;
+  padding-bottom:15px;
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
   position:relative;
   cursor: pointer;
   background-color:#0000003d;
 }
-.each-accordionbox::before{
+.each-accordionbox h3{
+    position: relative;
+}
+.each-accordionbox h3::before{
   content:'+';
   position:absolute;
   top:50%;
@@ -683,7 +686,7 @@ header{
 
 .each-title{
   color:var(--red);
-  padding:0px 40px 15px;
+  padding:15px 40px 15px;
   font-weight: 600;
 
 /*     position: relative;
@@ -702,10 +705,9 @@ header{
 .each-accordionbox.active .each-title{
   border-bottom:1px solid var(--gray2);
 }
-.each-accordionbox.active::before{
+.each-accordionbox.active h3::before{
     content:'-';
   left: -30px;
-  top:25px;
 }
 /* accordion end */
 

@@ -820,8 +820,10 @@
 	  
 		  // Callback function to initialize AOS after script loaded
 		  script.onload = function() {
-			AOS.init();
-		  };
+			AOS.init({
+			  offset: 'bottom-bottom'
+			});
+		  }
 		}
 	  </script>
   
