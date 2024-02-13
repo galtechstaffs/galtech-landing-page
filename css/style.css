@@ -305,7 +305,7 @@ header{
     list-style: none;
     font-size: 16px;
     position: relative;
-    padding-left: 25px;
+    /* padding-left: 25px; */
     text-align: left;
 }
 .sub-head{
@@ -316,12 +316,12 @@ header{
     text-align: left;
     padding-bottom: 10px;
 }
-.hero-ul li:before{
+/* .hero-ul li:before{
     content: "\f00c";
     position: absolute;
     left: 0px;
     font-family: 'FontAwesome';
-}
+} */
 .btn-container{
     display: flex;
     gap: 20px;
@@ -821,6 +821,7 @@ header{
     height: 390px;
     width: 100%;
     object-fit: cover;
+    border-radius: 16px;
 }
 /* choose end */
 
@@ -885,6 +886,7 @@ header{
     position: relative;
     border-radius: 50%;
     box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    object-fit: cover;
 
 }
 /* ------testimonial  close-------*/
