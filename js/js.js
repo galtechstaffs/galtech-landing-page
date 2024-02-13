@@ -8,19 +8,19 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// var navLinks = document.querySelectorAll('.nav-items');
-// window.addEventListener('scroll', function () {
-//     navLinks.forEach(function (link) {
-//         var targetId = link.getAttribute('href').substring(1);
-//         var targetSection = document.getElementById(targetId);
-//         var rect = targetSection.getBoundingClientRect();
-//         if (rect.top <= 100 && rect.bottom >= 0) {
-//             link.classList.add('active');
-//         } else {
-//             link.classList.remove('active');
-//         }
-//     });
-// });
+var navLinks = document.querySelectorAll('.nav-items');
+window.addEventListener('scroll', function () {
+    navLinks.forEach(function (link) {
+        var targetId = link.getAttribute('href').substring(1);
+        var targetSection = document.getElementById(targetId);
+        var rect = targetSection.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 0) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
 
 document.querySelector(".each-accordionbox:first-child").classList.add("active");
 document.querySelector(".each-accordionbox:first-child .each-text").style.display = "block";
@@ -67,14 +67,14 @@ document.addEventListener('DOMContentLoaded', function () {
         var viewMoreBtns = document.querySelectorAll('.viewMoreBtn');
 
         textContainers.forEach(function (textContainer, index) {
-            textContainer.style.maxHeight = '137px'; // Initialize the max height
+            textContainer.style.maxHeight = '130px'; // Initialize the max height
 
             viewMoreBtns[index].addEventListener('click', function () {
                 if (textContainer.style.maxHeight) {
                     textContainer.style.maxHeight = null;
                     viewMoreBtns[index].textContent = 'Read Less';
                 } else {
-                    textContainer.style.maxHeight = '137px';
+                    textContainer.style.maxHeight = '130px';
                     viewMoreBtns[index].textContent = 'Read More';
                 }
             });

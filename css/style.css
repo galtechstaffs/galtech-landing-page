@@ -35,8 +35,8 @@ header{
 }
 .top-action{
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 50px;
+    right: 50px;
     cursor: pointer;
 }
 .top-action img{
@@ -120,7 +120,17 @@ header{
     color: var(--red);
 
 }
-
+.nav-items.active:before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: var(--red);
+    opacity: .6;
+    animation: tab_border .2s;
+}
 
 
 .menu{
@@ -623,7 +633,7 @@ header{
 
 /* fullstack start */
 .development-row{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .col-md-6{
     width:50%;
@@ -1004,6 +1014,9 @@ header{
         transform: translateY(-50%);
         filter: brightness(0) invert(1);
 }
+.join-card:not(:last-child)::after{
+    filter: brightness(0) invert(1);
+}
 .join-card:not(:first-child):nth-of-type(odd):before {
     right: -140px;
     left: auto;
@@ -1207,6 +1220,7 @@ div#modal-container {
   width: 100%;
   text-align: center;
   border-radius: 26px;
+  min-height: 200px;
 }
 @media (min-width: 600px) {
   .card {
