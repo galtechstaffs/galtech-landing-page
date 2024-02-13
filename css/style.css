@@ -1422,3 +1422,16 @@ div#modal-container {
     margin-right: 0.35rem;
     color: var(--red);
 }
+
+
+/* @media (max-width:1300px){
+    [data-aos=fade-right] {
+        transform: translate3d(-10px,0,0);
+    }
+    [data-aos=fade-left] {
+        transform: translate3d(10px,0,0);
+    }
+    [data-aos=fade-up] {
+        transform: translate3d(0,60px,0);
+    }
+} */
