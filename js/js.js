@@ -45,18 +45,20 @@ document.querySelectorAll(".each-title").forEach(function (title) {
     });
 });
 
-document.querySelector(".btn-modal").addEventListener('click', function () {
-    var body = document.body;
+// Select all elements with the class "btn-modal" and add a click event listener to each one
+document.querySelectorAll(".btn-modal").forEach(function(btn) {
+    btn.addEventListener('click', function () {
+        var body = document.body;
 
-    if (body.classList.contains('open')) {
-        body.classList.remove('open');
-    } else {
-        body.classList.add('open');
-    }
+        // Toggle the class "open" on the body element
+        body.classList.toggle('open');
+    });
 });
 
+
 document.querySelector(".close-btn").addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the default action of the link (e.g., navigating to "#")
+    event.preventDefault();
+    
     document.body.classList.remove('open');
 });
 
