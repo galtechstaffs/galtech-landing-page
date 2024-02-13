@@ -17,8 +17,20 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			if (window.innerWidth > 1300) {
+			  // Create link element for CSS
+			  var link = document.createElement("link");
+			  link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
+			  link.rel = "stylesheet";
+			  document.head.appendChild(link);
+		  
+			  // Create script element for JavaScript
+			  var script = document.createElement("script");
+			  script.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
+			  document.head.appendChild(script);
+			}
+		  </script>
 
 
 </head>
@@ -799,11 +811,19 @@
 	</div>
 	<script src="js/js.js"></script>
 
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
-		AOS.init();
-	</script>
-
+		if (window.innerWidth > 1300) {
+		  // Create script element for AOS JavaScript
+		  var script = document.createElement("script");
+		  script.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
+		  document.head.appendChild(script);
+	  
+		  // Callback function to initialize AOS after script loaded
+		  script.onload = function() {
+			AOS.init();
+		  };
+		}
+	  </script>
   
   
 
