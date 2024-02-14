@@ -274,6 +274,7 @@ header{
     justify-content: center;
 
 }
+
 .container.hero-container {
     display: flex;
     flex-wrap: wrap;
@@ -1115,7 +1116,16 @@ div#modal-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
+  .ring .inputBx{
+
+    transition: .3s;
+}
+.ring .login:hover .inputBx{
+    transform: scalex(1.06);
+    transition: .3s;
+}
   .ring i {
     position: absolute;
     inset: 0;
@@ -1431,23 +1441,13 @@ div#modal-container {
 }
 
 
-/* @media (max-width:1300px){
-    [data-aos=fade-right] {
-        transform: translate3d(-10px,0,0);
-    }
-    [data-aos=fade-left] {
-        transform: translate3d(10px,0,0);
-    }
-    [data-aos=fade-up] {
-        transform: translate3d(0,60px,0);
-    }
-} */
 
 
 
 
 
-.tilt-box{
+
+/* .tilt-box{
     transition:all .3s;
 }
 .t_over{
@@ -1480,4 +1480,21 @@ div#modal-container {
 
 
 
-    .t_over:nth-child(4):hover ~ .tilt-box{ transform: rotateX(15deg) rotateY(-15deg) }
+    .t_over:nth-child(4):hover ~ .tilt-box{ transform: rotateX(15deg) rotateY(-15deg) } */
+
+
+
+
+
+
+    @media (max-width:1400px){
+    [data-aos=fade-right] {
+        transform: translate3d(-10px,0,0);
+    }
+    [data-aos=fade-left] {
+        transform: translate3d(10px,0,0);
+    }
+    [data-aos=fade-up] {
+        transform: translate3d(0,60px,0);
+    }
+}
