@@ -1,3 +1,8 @@
+.gradient-text {
+    background: -webkit-linear-gradient(#7c1824,  var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 header{
     position: relative;
     top: 0;
@@ -39,6 +44,11 @@ header{
     bottom: 50px;
     right: 50px;
     cursor: pointer;
+    z-index: 9;
+}
+.scroll-start .top-action{
+    position: fixed;
+
 }
 .top-action img{
     width: 25px;
@@ -1487,7 +1497,7 @@ div#modal-container {
 
 
 
-    @media (max-width:1400px){
+    @media (max-width:1360px){
     [data-aos=fade-right] {
         transform: translate3d(-10px,0,0);
     }
