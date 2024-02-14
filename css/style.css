@@ -239,28 +239,28 @@ header{
         transform: skewX(-12.5deg) skewY(-12.5deg);
     }
     33.3% {
-        -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-        transform: skewX(6.25deg) skewY(6.25deg);
+        -webkit-transform: skewX(6.15deg) skewY(6.15deg);
+        transform: skewX(6.15deg) skewY(6.15deg);
     }
     44.4% {
-        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-        transform: skewX(-3.125deg) skewY(-3.125deg);
+        -webkit-transform: skewX(-3.115deg) skewY(-3.115deg);
+        transform: skewX(-3.115deg) skewY(-3.115deg);
     }
     55.5% {
-        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-        transform: skewX(1.5625deg) skewY(1.5625deg);
+        -webkit-transform: skewX(1.5615deg) skewY(1.5615deg);
+        transform: skewX(1.5615deg) skewY(1.5615deg);
     }
     66.6% {
-        -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
-        transform: skewX(-.78125deg) skewY(-.78125deg);
+        -webkit-transform: skewX(-.78115deg) skewY(-.78115deg);
+        transform: skewX(-.78115deg) skewY(-.78115deg);
     }
     77.7% {
-        -webkit-transform: skewX(.390625deg) skewY(.390625deg);
-        transform: skewX(.390625deg) skewY(.390625deg);
+        -webkit-transform: skewX(.390615deg) skewY(.390615deg);
+        transform: skewX(.390615deg) skewY(.390615deg);
     }
     88.8% {
-        -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
-        transform: skewX(-.1953125deg) skewY(-.1953125deg);
+        -webkit-transform: skewX(-.1953115deg) skewY(-.1953115deg);
+        transform: skewX(-.1953115deg) skewY(-.1953115deg);
     }
 
 }
@@ -514,7 +514,7 @@ header{
     gap: 10px;
 }
 /* .overview .column-box h5, .overview .column-box h6{
-    transform:  skew(10deg);;
+    transform:  skew(15deg);;
 } */
 .column-box span {
     color: var(--gray);
@@ -1369,6 +1369,7 @@ div#modal-container {
     transition: all .3s linear;
     width: 0;
       padding: 0;
+      z-index: 99;
       }
 
 .newsbox:hover{
@@ -1388,14 +1389,14 @@ div#modal-container {
     }
     .newsbox .news-container {
         max-height: 120px;
-        overflow: hidden;
+        overflow: auto;
         transition: all .3s linear;
     }
     .newsbox ul.newslist {
         position: relative;
         top: 0;
-        animation: scroll 37s linear 1s infinite;
-        transition: all .7s linear;
+        animation: scroll 20s linear 1s infinite;
+        transition: all 7s linear;
         padding: 0;
     }
     
@@ -1451,20 +1452,15 @@ div#modal-container {
 }
 .t_over{
     position: absolute;
-    width: 33.3%;
-    height: 33.3%;
+    width: 50%;
+    height: 50%;
     z-index: 1;
 }
 
 .t_over:nth-child(1) { left: 0; top: 0; }
-.t_over:nth-child(2) { left: 33.333%; top: 0; } 
- .t_over:nth-child(3) { left: 66.666%; top: 0; }
-.t_over:nth-child(4) { left: 0; top: 33.333%; }
-.t_over:nth-child(5) { left: 33.333%; top: 33.333%;}
-.t_over:nth-child(6) { left: 66.66%; top: 33.333%;}
-.t_over:nth-child(7) { left: 0; top: 66.666%; }
-.t_over:nth-child(8){ left: 33.333%; top: 66.666%;}
-.t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
+.t_over:nth-child(2) { left: 50%; top: 0; } 
+.t_over:nth-child(3) { left: 0%; top: 50%; }
+.t_over:nth-child(4) { left: 50%; top: 50%; }
 
 
 
@@ -1474,17 +1470,14 @@ div#modal-container {
 
 
 
-.t_over:nth-child(1):hover ~ .tilt-box{ transform: rotateX(-25deg) rotateY(25deg) }
-     .t_over:nth-child(2):hover ~ .tilt-box{ transform: rotateX(-25deg) rotateY(0deg) }
 
-    .t_over:nth-child(3):hover ~ .tilt-box{ transform: rotateX(-25deg) rotateY(-25deg) }
-       .t_over:nth-child(4):hover ~ .tilt-box{ transform: rotateX(0deg) rotateY(25deg) }
+.t_over:nth-child(1):hover ~ .tilt-box{ transform: rotateX(-15deg) rotateY(15deg) }
+ 
 
-    .t_over:nth-child(5):hover ~ .tilt-box{ transform: rotateX(0deg) rotateY(0deg) }
+    .t_over:nth-child(2):hover ~ .tilt-box{ transform: rotateX(-15deg) rotateY(-15deg) }
 
-    .t_over:nth-child(6):hover ~ .tilt-box{ transform: rotateX(0deg) rotateY(-25deg) }
-        .t_over:nth-child(7):hover ~ .tilt-box{ transform: rotateX(25deg) rotateY(25deg) }
+        .t_over:nth-child(3):hover ~ .tilt-box{ transform: rotateX(15deg) rotateY(15deg) }
 
-    .t_over:nth-child(8):hover ~ .tilt-box{ transform: rotateX(25deg) rotateY(0deg) }
 
-    .t_over:nth-child(9):hover ~ .tilt-box{ transform: rotateX(25deg) rotateY(-25deg) }
+
+    .t_over:nth-child(4):hover ~ .tilt-box{ transform: rotateX(15deg) rotateY(-15deg) }
