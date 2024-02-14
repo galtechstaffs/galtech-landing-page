@@ -1111,7 +1111,7 @@ div#modal-container {
   .ring {
     position: relative;
     width: 600px;
-    height: 600px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
