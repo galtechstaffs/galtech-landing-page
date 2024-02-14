@@ -657,6 +657,21 @@ header{
 .iframe-col .elementor-video{
     width: 100%;
 }
+a.thumbnail-vid {
+    position: absolute;
+    inset: 0;
+    background-color: #0000004d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 16px;
+}
+a.thumbnail-vid img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 /* fullsttack end */
 
 
