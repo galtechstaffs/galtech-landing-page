@@ -653,6 +653,7 @@ header{
 }
 .iframe-col{
     padding-right: 50px;
+    position: relative;
 }
 .iframe-col .elementor-video{
     width: 100%;
@@ -1512,7 +1513,7 @@ div#modal-container {
 
 
 
-    @media (max-width:1360px){
+    /* @media (max-width:1360px){
     [data-aos=fade-right] {
         transform: translate3d(-10px,0,0);
     }
@@ -1522,4 +1523,4 @@ div#modal-container {
     [data-aos=fade-up] {
         transform: translate3d(0,60px,0);
     }
-}
+} */
