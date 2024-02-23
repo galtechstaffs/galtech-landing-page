@@ -507,6 +507,7 @@ h1.heading{
     border-radius: 6px;
     position: relative;
     transition: .3s;
+    background-color: #1a1e2b;
 }
 .column-box:hover{
     transform:  skew(0deg) translateX(-3px)!important;
@@ -719,7 +720,7 @@ a.thumbnail-vid img{
   position:absolute;
   top:50%;
   transform: translateY(-50%);
-  left:-20px;
+  left:20px;
   background:var(--red);
   background-position: center;
   border-radius:6px;
@@ -731,7 +732,7 @@ a.thumbnail-vid img{
 
 .each-title{
   color:var(--red);
-  padding:15px 40px 15px;
+  padding:15px 70px 15px;
   font-weight: 600;
 
 /*     position: relative;
@@ -752,7 +753,7 @@ a.thumbnail-vid img{
 }
 .each-accordionbox.active h3::before{
     content:'-';
-  left: -30px;
+  left: -10px;
 }
 /* accordion end */
 
