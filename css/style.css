@@ -1,7 +1,8 @@
 .gradient-text {
-    background: -webkit-linear-gradient(#7c1824,  var(--red));
+    /* background: -webkit-linear-gradient(#7c1824,  var(--red));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color:var(--red);
   }
 header{
     position: relative;
@@ -9,7 +10,7 @@ header{
     z-index: 999;
     width: 100%;
     left: 0;
-    background:  var(--bg);
+    background: linear-gradient(278deg, var(--bg2), var(--bg));
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transition: .3s;
 
@@ -74,10 +75,16 @@ header{
     display: flex;
     z-index: 9;
     background: var(--bg);
+    padding: 5px;
     /* padding: 5px 10px; */
     
   
 
+
+}
+footer .logo{
+
+    background: initial;
 
 }
 .logo img{
@@ -193,6 +200,7 @@ header{
 }
 .scroll-start .header-left .logo{
     display: flex;
+    background: initial;
 }
 /* header end */
 /* social icons start */
@@ -299,7 +307,9 @@ header{
     flex-direction: column;
     gap: 30px;
 }
-
+h1.heading{
+    text-align: center;
+}
 .hero-sec h1{
     color: var(--white);
     z-index: 1;
@@ -350,7 +360,7 @@ header{
     border-radius: 50%;
     background: linear-gradient(90deg, var(--red) -4.46%, rgb(255 145 141 / 13%) 66.67%);
     filter: blur(40px);
-    animation: shape1 8s infinite;
+    animation: shape1 12s infinite;
     opacity: .5;
 }
 @keyframes shape1 {
@@ -413,7 +423,7 @@ header{
 
 .scrolling-text {
     /* background: var(--white); */
-    background: var(--gray2);
+    /* background: var(--gray2); */
 
     
     color: var(--red);
@@ -450,6 +460,8 @@ header{
     width: 180px;
     height: 110px;
     object-fit: contain;
+    background-color: white;
+    padding: 0 10px;
 }
 .scrolling-text__item:empty {
     display: none
@@ -504,7 +516,7 @@ header{
     padding: 40px 0;
 }
 .overview.section{
-    padding-top: 0;
+    padding-top: 80px;
 }
 .overview .row{
     padding-top: 50px;
@@ -529,7 +541,7 @@ header{
 } */
 .column-box span {
     color: var(--gray);
-    -webkit-text-fill-color: #0e1019;
+    -webkit-text-fill-color: var(--bg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--red);
     font-size: 140px;
@@ -550,6 +562,7 @@ header{
 }
 .column-box h6{
     opacity: .8;
+    line-height: 20px;
 }
 /* overview end */
 
@@ -693,7 +706,7 @@ a.thumbnail-vid img{
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
   position:relative;
   cursor: pointer;
-  background-color:#0000003d;
+  background-color:#29314729;
 }
 .each-accordionbox h3{
     position: relative;
@@ -1150,25 +1163,25 @@ div#modal-container {
 }
 .ring .login:hover .inputBx{
     transform: scalex(1.06);
-    transition: .3s;
+    transition: .6s;
 }
   .ring i {
     position: absolute;
     inset: 0;
     border: 2px solid #fff;
-    transition: 0.5s;
+    transition: 1s;
   }
   .ring i:nth-child(1) {
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    animation: animate 6s linear infinite;
+    animation: animate 10s linear infinite;
   }
   .ring i:nth-child(2) {
     border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate 4s linear infinite;
+    animation: animate 8s linear infinite;
   }
   .ring i:nth-child(3) {
     border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate2 10s linear infinite;
+    animation: animate2 12s linear infinite;
   }
   .ring:hover i {
     border: 3px solid var(--clr);
