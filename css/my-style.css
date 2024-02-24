@@ -40,13 +40,10 @@
     font-family: 'Poppins',sans-serif;
 
 }
-.placement-marquee {
-    /* mask-image: linear-gradient(to left, transparent 5%, black 100%); */
+.placement-marquee, .marquee-sec.scrolling-text {
     mask-image: none;
 }
-.marquee-sec.scrolling-text{
-    mask-image: none;
-}
+
 .row {
     row-gap: 30px;
 }.container{max-width:720px}.border-main img{object-fit:none;height:100px}.overview.section{padding-top:40px}.marque-main{width:100%}
