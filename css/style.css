@@ -476,6 +476,16 @@ h1.heading{
     /* background-color: white; */
     padding: 0 10px;
 }
+.placement-marquee {
+    /* mask-image: linear-gradient(to left, transparent 5%, black 100%); */
+    mask-image: linear-gradient(to right, transparent 14%, black 50%);
+}
+.marquee-sec.scrolling-text{
+    mask-image: linear-gradient(to left, transparent 5%, black 50%);
+}
+/* .scrolling-text_inner.direction-left {
+    mask-image: linear-gradient(to right, transparent 12%, black 100%);
+} */
 .placement-marquee .scrolling-text__item{
     padding: 0 10px;
 }
