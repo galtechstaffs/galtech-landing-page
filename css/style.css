@@ -700,6 +700,7 @@ h1.heading{
 .iframe-col{
     padding-right: 50px;
     position: relative;
+    line-height: 0;
 }
 .iframe-col .elementor-video{
     width: 100%;
@@ -897,6 +898,7 @@ a.thumbnail-vid img{
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
+    /* height: 100%; */
 }
 /* choose end */
 
