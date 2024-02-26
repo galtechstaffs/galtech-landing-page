@@ -11,7 +11,7 @@ header{
     width: 100%;
     left: 0;
     background: linear-gradient(278deg, var(--bg2), var(--bg));
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
     transition: .3s;
 
 }
@@ -49,6 +49,7 @@ header{
 }
 .scroll-start .top-action{
     position: fixed;
+    
 
 }
 .top-action img{
@@ -59,6 +60,11 @@ header{
 
     height: 75px;
     transition: .3s;
+    
+}
+.scroll-start header {
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .textContainer {
     max-height: 100%;
@@ -73,14 +79,33 @@ header{
 .logo{
     align-items: center;
     display: flex;
-    z-index: 9;
-    background: var(--bg);
+    /* z-index: 9;
+    background: var(--bg); */
     padding: 5px;
     /* padding: 5px 10px; */
     
   
 
 
+}
+.logo:before {
+    content: '';
+    background-color: #232530;
+    width: calc(50% - 95px);
+    height: 1px;
+    left: 0;
+    position: fixed;
+}
+.logo:after{
+    content: '';
+    background-color: #232530;
+    width: calc(50% - 95px);
+    height: 1px;
+    right: 0;
+    position: fixed;
+}
+.scroll-start .logo:before , .scroll-start .logo:after{
+    display: none;
 }
 footer .logo{
 
