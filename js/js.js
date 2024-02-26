@@ -8,19 +8,19 @@ window.addEventListener('scroll', function () {
     }
 });
 
-var navLinks = document.querySelectorAll('.nav-items');
-window.addEventListener('scroll', function () {
-    navLinks.forEach(function (link) {
-        var targetId = link.getAttribute('href').substring(1);
-        var targetSection = document.getElementById(targetId);
-        var rect = targetSection.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 0) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
-});
+// var navLinks = document.querySelectorAll('.nav-items');
+// window.addEventListener('scroll', function () {
+//     navLinks.forEach(function (link) {
+//         var targetId = link.getAttribute('href').substring(1);
+//         var targetSection = document.getElementById(targetId);
+//         var rect = targetSection.getBoundingClientRect();
+//         if (rect.top <= 100 && rect.bottom >= 0) {
+//             link.classList.add('active');
+//         } else {
+//             link.classList.remove('active');
+//         }
+//     });
+// });
 
 document.querySelector(".each-accordionbox:first-child").classList.add("active");
 document.querySelector(".each-accordionbox:first-child .each-text").style.display = "block";
