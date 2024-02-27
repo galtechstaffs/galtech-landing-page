@@ -4,6 +4,23 @@
     -webkit-text-fill-color: transparent; */
     color:var(--red);
   }
+  .transition{
+    transition: .4s;
+  }
+  h1{
+    position: relative;
+  overflow: hidden;
+  }
+  .split-parent {
+    overflow: hidden;
+  }
+  .split-child {
+    display: inline-block;
+  }
+  h1 > div {
+    position: relative;
+    margin: 0;
+  }
 header{
     position: relative;
     top: 0;
@@ -52,6 +69,9 @@ header{
     
 
 }
+.viewMoreBtn{
+    text-align: center;
+}
 .top-action img{
     width: 25px;
     height: 25px;
@@ -69,6 +89,7 @@ header{
 .textContainer {
     max-height: 100%;
     overflow: hidden;
+    transition: .4s;
   }
 
 .scroll-start  .fixed-contact > div{
@@ -324,6 +345,7 @@ footer .logo{
     align-items: center;
     padding-top: 100px;
     padding-bottom: 40px;
+    min-height: 85vh;
 
 }
 .hero-left{
@@ -766,6 +788,7 @@ a.thumbnail-vid img{
   position:relative;
   cursor: pointer;
   background-color:#29314729;
+  transition: .5s;
 }
 .each-accordionbox h3{
     position: relative;
@@ -905,6 +928,7 @@ a.thumbnail-vid img{
     display: flex;
     flex-wrap: wrap;
     row-gap: 15px;
+    transition: .4s;
 }
 .choose-items h6{
     width: 50%;
@@ -1106,6 +1130,7 @@ a.thumbnail-vid img{
     width: 100%;
     z-index: 9;
     box-sizing: border-box;
+    transition: .4s;
 
 }
 .join-card:not(:last-child) {
@@ -1344,6 +1369,7 @@ div#modal-container {
   text-align: center;
   border-radius:16px;
   min-height: 200px;
+  transition: .4s;
 }
 @media (min-width: 600px) {
   .card {

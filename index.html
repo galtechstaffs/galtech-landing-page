@@ -13,24 +13,12 @@
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/my-style.css">
-	
+	<link rel="stylesheet" href="css/gsap.css">
 
 
-		<script>
-			if (window.innerWidth > 1360) {
-			  // Create link element for CSS
-			  var link = document.createElement("link");
-			  link.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
-			  link.rel = "stylesheet";
-			  document.head.appendChild(link);
-		  
-			  // Create script element for JavaScript
-			  var script = document.createElement("script");
-			  script.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
-			  document.head.appendChild(script);
-			}
-		  </script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 </head>
 
@@ -38,18 +26,18 @@
 
 	
 	<ul class="social_icons"  >
-		<li  data-aos="fade-right" data-aos-duration="700"><a href="https://www.facebook.com/galtech.school" target="_blank"><img decoding="async"
+		<li  ><a href="https://www.facebook.com/galtech.school" target="_blank"><img decoding="async"
 					src="images/facebook.png" alt="facebook"></a></li>
-		<li  data-aos="fade-right" data-aos-duration="800"><a href="https://twitter.com/galtech_school" target="_blank"><img decoding="async"
+		<li ><a href="https://twitter.com/galtech_school" target="_blank"><img decoding="async"
 					src="images/twitter.png" alt="twitter"></a></li>
-		<li  data-aos="fade-right" data-aos-duration="900"><a href="https://www.linkedin.com/company/90389697/" target="_blank"><img decoding="async"
+		<li ><a href="https://www.linkedin.com/company/90389697/" target="_blank"><img decoding="async"
 					src="images/linkedin.png" alt="linkedin"></a></li>
-		<li  data-aos="fade-right" data-aos-duration="1000"><a href="https://www.youtube.com/@galtechlearninghub" target="_blank"><img decoding="async"
+		<li  ><a href="https://www.youtube.com/@galtechlearninghub" target="_blank"><img decoding="async"
 					src="images/youtube.png" alt="youtube"></a></li>
-		<li  data-aos="fade-right" data-aos-duration="1100"><a href="https://www.instagram.com/galtech.school/" target="_blank"><img decoding="async"
+		<li ><a href="https://www.instagram.com/galtech.school/" target="_blank"><img decoding="async"
 					src="images/instagram.png" alt="instagram"></a></li>
 	</ul>
-	<header  data-aos="fade-down" data-aos-duration="600">
+	<header >
 		
 		<div class="header-align container">
 
@@ -90,17 +78,18 @@
 			<div class="container hero-container">
 				<div class="hero-left">
 					<div class="shape1"></div>
-					<h1 data-aos="fade-up" data-aos-duration="500">
-						Job-focused <span class="gradient-text">Full Stack</span> Web Development Training.
+					<h1 class="main-head">
+						<span>Job-focused </span><span class="gradient-text">Full Stack</span> <span>Web Development Training.</span>
 					</h1>
+					
 					<ul class="hero-ul">
-						<li data-aos="fade-up" data-aos-duration="600">✔ Internship at Infopark, Koratty</li>
-						<li data-aos="fade-up"  data-aos-duration="700">✔ Mentorship from Industry Experts</li>
-						<li data-aos="fade-up" data-aos-duration="800">✔ Opportunity to Work on Live Projects</li>
-						<li data-aos="fade-up" data-aos-duration="900">✔ Online and Offline Classes</li>
+						<li  class="sub-head">✔ Internship at Infopark, Koratty</li>
+						<li  class="sub-head">✔ Mentorship from Industry Experts</li>
+						<li  class="sub-head">✔ Opportunity to Work on Live Projects</li>
+						<li class="sub-head">✔ Online and Offline Classes</li>
 
 					</ul>
-					<div class="btn-container"  data-aos="fade-up" data-aos-duration="1000">
+					<div class="btn-container"  >
 						<a class="btn-site btn-anim button btn-modal">Get in Touch
 						</a>
 						<a class="btn-site2  btn-anim2"git add .></i>Download Brochure
@@ -108,19 +97,8 @@
 					</div>
 
 				</div>
-				<div class="hero-right"  data-aos="zoom-in" data-aos-duration="700">
-					<!-- <div class="hero-banner">
-						<span class="t_over"></span>
-						<span class="t_over"></span>
-						<span class="t_over"></span>
-						<span class="t_over"></span>
-
-
-						<div class="tilt-box">
-						<img src="images/dummy.png" class="hero-banner-img" alt="banner_img">
-						</div>
-
-					</div> -->
+				<div class="hero-right"  >
+					
 					<div class="ring">
 						<i style="--clr:#00ff0a;"></i>
 						<i style="--clr:#ff0057;"></i>
@@ -193,17 +171,14 @@
 
 		</div>
 
-		<!-- <div class="border-main"  data-aos="fade-up" data-aos-duration="1000">
-			<img src="images/border-1.png" alt="shape">
-		</div> -->
 		<div class="section overview">
 			<div class="container">
-				<div class="head" data-aos="fade-up">
+				<div class="head">
 					<h2>Program Overview</h2>
 				</div>
 				<div class="row">
-					<div class="col-4" data-aos="fade-up" data-aos-duration="600">
-						<div class="column-box">
+					<div class="col-4" >
+						<div class="column-box left-right-rotate transition">
 							<span>1</span>
 							<div>
 								<h5>Duration</h5>
@@ -213,8 +188,8 @@
 
 						</div>
 					</div>
-					<div class="col-4" data-aos="fade-up" data-aos-duration="800">
-						<div class="column-box">
+					<div class="col-4" >
+						<div class="column-box card-up transition">
 							<span>2</span>
 							<div>
 								<h5>Format</h5>
@@ -223,8 +198,8 @@
 							<img src="images/format.png" class="img-icon"  alt="format">
 						</div>
 					</div>
-					<div class="col-4" data-aos="fade-up" data-aos-duration="1000">
-						<div class="column-box">
+					<div class="col-4" >
+						<div class="column-box card-up2 transition">
 							<span>3</span>
 							<div>
 								<h5>Projects</h5>
@@ -233,8 +208,8 @@
 							<img src="images/hiring.png" class="img-icon"  alt="projects">
 						</div>
 					</div>
-					<div class="col-4" data-aos="fade-up" data-aos-duration="1200">
-						<div class="column-box">
+					<div class="col-4" >
+						<div class="column-box  right-left-rotate transition">
 							<span>4</span>
 							<div>
 								<h5>Launch Pad</h5>
@@ -253,23 +228,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="head " style="width: 100%;">
-						<!-- <h5 class="sub-head" data-aos="fade-left" data-aos-duration="600">Placements</h5> -->
-						<h1 class="heading " data-aos="fade-right" data-aos-duration="700">
+						<!-- <h5 class="sub-head" >Placements</h5> -->
+						<h1 class="heading text" >
 							Our Recently Placed <span class="gradient-text">Students</span>
 						</h1>
 					</div>
 					<div class="placement-left">
 						<div class="gap-direction">
 							
-							<div class="textContainer" data-aos="fade-up">
-								<h6 class="">Full stack development course is a combination of front end and back end development courses. It refers to the client side as well as the server side of a website or web application. Our full stack course covers HTML, HTML5, CSS3, PHP courses, React JS development programs, WordPress, JavaScript, Ajax, jQuery, MySQL, Laravel, etc. This is a complex mode of web development because it contains both front-end and back-end development. So, it is very essential to select the most suitable and proper institution for the best full stack development course or internship. Thereby you can enhance your skill in full stack development.</h6>
+							<div class="textContainer sub-text">
+								<h6 class="" >Full stack development course is a combination of front end and back end development courses. It refers to the client side as well as the server side of a website or web application. Our full stack course covers HTML, HTML5, CSS3, PHP courses, React JS development programs, WordPress, JavaScript, Ajax, jQuery, MySQL, Laravel, etc. This is a complex mode of web development because it contains both front-end and back-end development. So, it is very essential to select the most suitable and proper institution for the best full stack development course or internship. Thereby you can enhance your skill in full stack development.</h6>
 								<h6 class="mt-3">A full stack web developer has excessive scope when compared with other web developers as one can acquire the abilities of front end and back end developers. Therefore, if a person chooses a full stack course they can work as a full stack developer, front end developer as well as a back end developer.</h6>
 								<h6 class="mt-3">Are you interested to learn and develop impressive websites or web applications? Then you can choose our GALTech School of Technology’s full stack web development course and we assure you that it will be a great stepping stone for your career development.&nbsp;</h6>
 							</div>
-							<h6 class="viewMoreBtn" style="color: var(--red); margin-top:-15px;" data-aos="fade-up">Read More</h6>
+							<h6 class="viewMoreBtn" style="color: var(--red); margin-top:-15px;" >Read More</h6>
 						</div>
 					</div>
-					<div  class="marque-main placement-marquee" data-aos="fade-left" data-aos-duration="600">
+					<div  class="marque-main placement-marquee" >
 						<div id="tools" class="marquee-sec scrolling-text">
 							<div class="scrolling-text_inner direction-left" style="--marquee-speed: 30s;">
 								<div >
@@ -387,7 +362,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="tools" class="marquee-sec scrolling-text my-40" data-aos="fade-up" data-aos-duration="600" style="mask-image: linear-gradient(to right, transparent 5%, black 20%);">
+		<div id="tools" class="marquee-sec scrolling-text my-40"  style="mask-image: linear-gradient(to right, transparent 5%, black 20%);">
 			<div class="scrolling-text_inner direction-left" style="--marquee-speed: 30s; mask-image: linear-gradient(to left, transparent 5%, black 20%);">
 				<div >
 					<div class="scrolling-text__item">
@@ -482,18 +457,16 @@
 			<div class="container">
 				<div class="head-w gap-direction">
 					<div class="head ">
-						<!-- <h5 class="sub-head" data-aos="fade-left" data-aos-duration="600">Fullstack Development</h5> -->
-						<h1 class="heading" data-aos="fade-right" data-aos-duration="700">
+						<!-- <h5 class="sub-head" >Fullstack Development</h5> -->
+						<h1 class="heading text">
 							What is <span class="gradient-text">Fullstack</span>  Development
 						</h1>
 					</div>
 				</div>
 				
 				<div class="row development-row">
-					<!-- <div class=" col-md-6 iframe-col" data-aos="zoom-in" data-aos-duration="800">
-						<iframe class="elementor-video" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Full stack web development course Malayalam | Python full stack developer tutorial Malayalam" width="640" height="360" src="https://www.youtube.com/embed/Mfco2Z0izcM?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.galtechlearning.com&amp;widgetid=1" id="widget2" data-gtm-yt-inspected-6="true"></iframe>
-					</div> -->
-					<div class="col-md-6 choose-right iframe-col" data-aos="zoom-in" data-aos-duration="600" style="height: fit-content;">
+					
+					<div class="col-md-6 choose-right iframe-col"  style="height: fit-content;">
 						<img src="images/full-stack.png"  alt="why_choose">
 						<a href="https://youtu.be/Mfco2Z0izcM" class="thumbnail-vid" target="_blank">
 							<img src="images/youtube-red.png">
@@ -501,7 +474,7 @@
 					
 					</div>
 					<div class="col-md-6">
-						<div class="textContainer" data-aos="fade-left" data-aos-duration="1000">
+						<div class="textContainer sub-text2" >
 							<h6>Full stack development course is a combination of front end and back end development courses. It refers to the client side as well as the server side of a website or web application. Our full stack course covers HTML, HTML5, CSS3, PHP courses, React JS development programs, WordPress, JavaScript, Ajax, jQuery, MySQL, Laravel, etc. </h6>
 						<h6 class="">
 							This is a complex mode of web development because it contains both front-end and back-end development. So, it is very essential to select the most suitable and proper institution for the best full stack development course or internship. Thereby you can enhance your skill in full stack development.
@@ -519,7 +492,7 @@
 					</div>
 						<!-- <a class="btn-site btn-anim mt-4">View More
 						</a> -->
-						<h6 class="viewMoreBtn" style="color: var(--red);" data-aos="fade-up" data-aos-duration="600">Read More</h6>
+						<h6 class="viewMoreBtn" style="color: var(--red);" >Read More</h6>
 						
 					</div>
 				</div>
@@ -532,32 +505,32 @@
 			<div class="container">
 				<div class="head-w gap-direction">
 					<div class="head ">
-						<!-- <h5 class="sub-head" data-aos="fade-left" data-aos-duration="600">Fullstack Development</h5> -->
-						<h1 class="heading" data-aos="fade-right" data-aos-duration="700">
+						<!-- <h5 class="sub-head" >Fullstack Development</h5> -->
+						<h1 class="heading text">
 							Programe <span class="gradient-text">Details</span>
 						</h1>
 					</div>
 				</div>
 				
-				<div class="accordion_inner">
+				<div class="accordion_inner mt-4">
 					<div class="accordion-section">
-					  <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="400">
+					  <div class="each-accordionbox bottom-top" >
 						<h3 class="each-title">Accordion Panel-1</h3>
 						<p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					  </div>
-					   <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="500">
+					   <div class="each-accordionbox bottom-top" >
 						  <h3 class="each-title">Accordion Panel-2</h3>
 						   <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					   </div>
-					   <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="600">
+					   <div class="each-accordionbox bottom-top" >
 						  <h3 class="each-title">Accordion Panel-3</h3>
 						   <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					   </div>
-					   <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="700">
+					   <div class="each-accordionbox bottom-top" >
 						<h3 class="each-title">Accordion Panel-3</h3>
 						 <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					 </div>
-					 <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="800">
+					 <div class="each-accordionbox bottom-top" >
 						<h3 class="each-title">Accordion Panel-3</h3>
 						 <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					 </div>
@@ -572,27 +545,27 @@
 			<div class="container">
 				<div class="head-w gap-direction">
 					<div class="head ">
-						<!-- <h5 class="sub-head" data-aos="fade-left" data-aos-duration="600">Fullstack Development</h5> -->
-						<h1 class="heading" data-aos="fade-right" data-aos-duration="700">
+						<!-- <h5 class="sub-head" >Fullstack Development</h5> -->
+						<h1 class="heading text">
 							Who Can<span class="gradient-text"> Join</span>
 						</h1>
 					</div>
 				</div>
 				
 				<main class="page-content">
-					<div class="card" data-aos="fade-up" data-aos-duration="400">
+					<div class="card left-right-rotate transition" >
 					<div class="content">
 						<h2 class="title">Graduates</h2>
 						<p class="copy">Students who has completed their science degree. BSC, MSC etc.</p>
 					</div>
 					</div>
-					<div class="card" data-aos="fade-up" data-aos-duration="600">
+					<div class="card card-up transition" >
 					<div class="content">
 						<h2 class="title">Professional Graduates</h2>
 						<p class="copy">Students who has completed their BTech, BE, MTech, MCA, Diploma in CS/IT etc.</p>
 					</div>
 					</div>
-					<div class="card" data-aos="fade-up" data-aos-duration="800">
+					<div class="card right-left-rotate transition" >
 					<div class="content">
 						<h2 class="title">Working Professionals</h2>
 						<p class="copy">Software Engineers or Developers working in IT field planning to switch their career or add new skillsets.</p>
@@ -608,14 +581,14 @@
 		<div  class="section">
 			<div class="container">
 				<div class="head">
-					<!-- <h5 class="sub-head text-center" data-aos="fade-left" data-aos-duration="600">Placements</h5> -->
-					<h1 class="heading text-center" data-aos="fade-right" data-aos-duration="700">
+					<!-- <h5 class="sub-head text-center" >Placements</h5> -->
+					<h1 class="heading text-center text">
 						Stacks<span class="gradient-text">  Covered</span>
 					</h1>
 				</div>
 
 				<div class="join-row">
-					<div class="join-card" data-aos="fade-right" data-aos-duration="500">
+					<div class="join-card bottom-top" >
 						<div class="join-card-content">
 							<h5><span class="text-blue font-weight-700">First Month:</span></h5>
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
@@ -625,7 +598,7 @@
 	
 						</div>
 					</div>
-					<div class="join-card" data-aos="fade-left" data-aos-duration="600">
+					<div class="join-card bottom-top" >
 						<div class="join-card-content">
 							<h5><span class="text-blue font-weight-700">Second Month:</span></h5>
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
@@ -635,7 +608,7 @@
 	
 						</div>
 					</div>
-					<div class="join-card" data-aos="fade-right" data-aos-duration="700">
+					<div class="join-card bottom-top" >
 						<div class="join-card-content">
 							<h5><span class="text-blue font-weight-700">Third Month:</span></h5>
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
@@ -645,7 +618,7 @@
 	
 						</div>
 					</div>
-					<div class="join-card" data-aos="fade-left" data-aos-duration="800">
+					<div class="join-card bottom-top" >
 						<div class="join-card-content">
 							<h5><span class="text-blue font-weight-700">Fourth Month:</span></h5>
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
@@ -655,7 +628,7 @@
 	
 						</div>
 					</div>
-					<div class="join-card" data-aos="fade-right" data-aos-duration="600">
+					<div class="join-card bottom-top">
 						<div class="join-card-content">
 							<h5><span class="text-blue font-weight-700">Fifth Month:</span></h5>
 							<h6 class="pt-3">In the first month of training, you will be introduced to the field of digital marketing. You will learn about the various tactics and strategies used to promote products and services online.</h6>
@@ -675,15 +648,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="head" style="width: 100%;">
-						<!-- <h5 class="sub-head" data-aos="fade-left" data-aos-duration="600">Placements</h5> -->
-						<h1 class="heading" data-aos="fade-right" data-aos-duration="700">
+						<!-- <h5 class="sub-head" >Placements</h5> -->
+						<h1 class="heading text">
 							Why Choose <span class="gradient-text"> GALTech</span>
 						</h1>
 					</div>
 					<div class="col-md-6 choose-left">
 						<div class="gap-direction">
 							
-							<div class="choose-items" data-aos="fade-up" data-aos-duration="600">
+							<div class="choose-items bottom-top" >
 								<h6>Classes from Industry Experts</h6>
 								<h6>Project-based</h6>
 								<h6>Job-focused</h6>
@@ -705,7 +678,7 @@
 							
 						</div>
 					</div>
-					<div class="col-md-6 choose-right" data-aos="zoom-in" data-aos-duration="600">
+					<div class="col-md-6 choose-right right-left-rotate transition" >
 						<img src="https://www.carrollcc.edu/wp-content/uploads/technical-professional-studies-associate-drgree-carroll-community-college-scaled.jpg"  alt="why_choose">
 						
 
@@ -717,49 +690,35 @@
 			<div class="container">
 	
 				<div class="head">
-					<!-- <h5 class="sub-head text-center" data-aos="fade-left" data-aos-duration="600">Placements</h5> -->
-					<h1 class="heading" data-aos="fade-right" data-aos-duration="700">
+					<!-- <h5 class="sub-head text-center" >Placements</h5> -->
+					<h1 class="heading text">
 						What Our Students Say<span class="gradient-text"> About Us</span>
 					</h1>
 				</div>
 				
 				 
 					<div class="carousel-inner">
-						<div class="carousel-item" data-aos="fade-up" data-aos-duration="600">
+						<div class="carousel-item" >
 							<div class="testimonial4_slide">
-								<img src="https://pxbar.com/wp-content/uploads/2023/08/profile-picture-girl-girl-pic-for-instagram-profile.jpg" class="img-circle img-responsive"  alt="testimonials" />
-								<p>“I was a complete beginner in digital marketing before taking the course at GALTech School of Technology. The step-by-step approach of the curriculum made it easy for me to understand even the most complex topics. The practical assignments helped me to put my learning into practice and I was able to see real results from my efforts. I highly recommend this course to anyone looking to start a career in digital marketing.”</p>
-								<h4>Malavika</h4>
+								<img src="https://pxbar.com/wp-content/uploads/2023/08/profile-picture-girl-girl-pic-for-instagram-profile.jpg" class="img-circle img-responsive bottom-top" style="transition: .4s;"  alt="testimonials" />
+								<p class="bottom-top" style="transition: .4s;">“I was a complete beginner in digital marketing before taking the course at GALTech School of Technology. The step-by-step approach of the curriculum made it easy for me to understand even the most complex topics. The practical assignments helped me to put my learning into practice and I was able to see real results from my efforts. I highly recommend this course to anyone looking to start a career in digital marketing.”</p>
+								<h4 class="bottom-top" style="transition: .4s;">Malavika</h4>
 							</div>
 						</div>
-						<div class="carousel-item" data-aos="fade-up" data-aos-duration="800">
+						<div class="carousel-item" >
 							<div class="testimonial4_slide">
-								<img src="https://www.shutterstock.com/image-photo/head-shot-portrait-close-smiling-600nw-1714666150.jpg" class="img-circle img-responsive"  alt="testimonials" />
-								<p>“The digital marketing course at GALTech School of Technology was a great investment in my future. The class size was small, allowing for personalized attention and individualized support. The instructors were always available to answer questions and provided real-world examples to help me understand the concepts better. I am now confident in my ability to create effective digital marketing campaigns.”</p>
-								<h4>Jacob Jhn</h4>
+								<img src="https://www.shutterstock.com/image-photo/head-shot-portrait-close-smiling-600nw-1714666150.jpg" class="img-circle img-responsive bottom-top" style="transition: .4s;"  alt="testimonials" />
+								<p class="bottom-top" style="transition: .4s;">“The digital marketing course at GALTech School of Technology was a great investment in my future. The class size was small, allowing for personalized attention and individualized support. The instructors were always available to answer questions and provided real-world examples to help me understand the concepts better. I am now confident in my ability to create effective digital marketing campaigns.”</p>
+								<h4 class="bottom-top" style="transition: .4s;">Jacob Jhn</h4>
 							</div>
 						</div>
-						<div class="carousel-item" data-aos="fade-up" data-aos-duration="1000">
+						<div class="carousel-item" >
 							<div class="testimonial4_slide">
-								<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive"  alt="testimonials" />
-								<p>“As a business owner, I was looking to enhance my digital marketing knowledge and GALTech School of Technology’s course exceeded my expectations. The hands-on approach of the course, combined with the interactive learning environment, allowed me to immediately apply what I learned to my business. I am now confident in my ability to drive results through digital marketing.” </p>
-								<h4>Cyril Johnson</h4>
+								<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive bottom-top" style="transition: .4s;"  alt="testimonials" />
+								<p class="bottom-top" style="transition: .4s;">“As a business owner, I was looking to enhance my digital marketing knowledge and GALTech School of Technology’s course exceeded my expectations. The hands-on approach of the course, combined with the interactive learning environment, allowed me to immediately apply what I learned to my business. I am now confident in my ability to drive results through digital marketing.” </p>
+								<h4 class="bottom-top" style="transition: .4s;">Cyril Johnson</h4>
 							</div>
 						</div>
-						<!-- <div class="carousel-item" data-aos="fade-up" data-aos-duration="1200">
-							<div class="testimonial4_slide">
-								<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive"  alt="testimonials" />
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-								<h4>Midhuna</h4>
-							</div>
-						</div>
-						<div class="carousel-item" data-aos="fade-up" data-aos-duration="1400">
-							<div class="testimonial4_slide">
-								<img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive"  alt="testimonials" />
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-								<h4>Midhuna</h4>
-							</div>
-						</div> -->
 						
 					</div>
 				
@@ -770,21 +729,21 @@
 			<div class="container">
 				<div class="head-w gap-direction">
 					<div class="head ">
-						<!-- <h5 class="sub-head" data-aos="fade-left" data-aos-duration="600">Fullstack Development</h5> -->
-						<h1 class="heading" data-aos="fade-right" data-aos-duration="700">
+						<!-- <h5 class="sub-head" >Fullstack Development</h5> -->
+						<h1 class="heading text">
 							Freequently Asked <span class="gradient-text">Questions</span>
 						</h1>
 					</div>
 				</div>
-				<div class="textContainer" data-aos="fade-up" data-aos-duration="600">
+				<div class="textContainer" >
 					<h6 class="text-center">Full stack development course is a combination of front end and back end development courses. It refers to the client side as well as the server side of a website or web application. Our full stack course covers HTML, HTML5, CSS3, PHP courses, React JS development programs, WordPress, JavaScript, Ajax, jQuery, MySQL, Laravel, etc. This is a complex mode of web development because it contains both front-end and back-end development. So, it is very essential to select the most suitable and proper institution for the best full stack development course or internship. Thereby you can enhance your skill in full stack development.</h6>
 				</div>
-				<h6 class="viewMoreBtn" style="color: var(--red);" data-aos="fade-up" data-aos-duration="600">Read More</h6>
+				<h6 class="viewMoreBtn" style="color: var(--red);" >Read More</h6>
 				<div class="row development-row">
-					<!-- <div class=" col-md-6 iframe-col" data-aos="zoom-in" data-aos-duration="600">
+					<!-- <div class=" col-md-6 iframe-col" >
 						<iframe class="elementor-video" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="How to Become a Full Stack Developer  2023 | Full stack developer course Malayalam FAQ" width="640" height="360" src="https://www.youtube.com/embed/AaTHbCCJb8A?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.galtechlearning.com&amp;widgetid=3" id="widget4" data-gtm-yt-inspected-6="true"></iframe>
 					</div> -->
-					<div class="col-md-6 choose-right iframe-col" data-aos="zoom-in" data-aos-duration="600" style="height: fit-content;">
+					<div class="col-md-6 choose-right iframe-col "  style="height: fit-content;">
 						<img src="images/full-stack.png"  alt="why_choose">
 						<a href="https://youtu.be/AaTHbCCJb8A" class="thumbnail-vid" target="_blank">
 							<img src="images/youtube-red.png">
@@ -793,23 +752,23 @@
 					<div class="col-md-6">
 						<div class="accordion_inner">
 							<div class="accordion-section">
-							  <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="400">
+							  <div class="each-accordionbox bottom-top" >
 								<h3 class="each-title">What is full stack development and what skills does it involve?</h3>
 								<p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							  </div>
-							   <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="600">
+							   <div class="each-accordionbox bottom-top" >
 								  <h3 class="each-title">Accordion Panel-2</h3>
 								   <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							   </div>
-							   <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="800">
+							   <div class="each-accordionbox bottom-top" >
 								  <h3 class="each-title">Accordion Panel-3</h3>
 								   <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							   </div>
-							   <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="1000">
+							   <div class="each-accordionbox bottom-top" >
 								<h3 class="each-title">Accordion Panel-3</h3>
 								 <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							 </div>
-							 <div class="each-accordionbox" data-aos="fade-left" data-aos-duration="1200">
+							 <div class="each-accordionbox bottom-top" >
 								<h3 class="each-title">Accordion Panel-3</h3>
 								 <p class="each-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							 </div>
@@ -950,22 +909,7 @@
 	</div>
 	<script src="js/js.js"></script>
 
-	<script>
-		if (window.innerWidth > 1360) {
-		  // Create script element for AOS JavaScript
-		  var script = document.createElement("script");
-		  script.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
-		  document.head.appendChild(script);
-	  
-		  // Callback function to initialize AOS after script loaded
-		  script.onload = function() {
-			AOS.init({
-			  offset: 'bottom-bottom'
-			});
-		  }
-		}
-	  </script>
-  
+	<script src="js/gsap.js"></script>
   
 
 </body>

@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var viewMoreBtns = document.querySelectorAll('.viewMoreBtn');
 
         textContainers.forEach(function (textContainer, index) {
-            textContainer.style.maxHeight = '130px'; // Initialize the max height
+            textContainer.style.maxHeight = '126px'; // Initialize the max height
 
             viewMoreBtns[index].addEventListener('click', function () {
                 if (textContainer.style.maxHeight) {
