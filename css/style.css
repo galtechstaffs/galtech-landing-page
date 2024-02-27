@@ -331,7 +331,7 @@ footer .logo{
 /* social icons end */
 /* hero start */
 .hero-sec{
-    /* min-height: calc(100vh - 80px); */
+    min-height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -937,7 +937,7 @@ a.thumbnail-vid img{
     font-size: 20px;
 }
 .choose-right img{
-    height: 390px;
+    /* height: 390px; */
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
@@ -1208,7 +1208,7 @@ a.thumbnail-vid img{
 
 div#modal-container {
     position: fixed;
-    background: var(--black);
+    background: linear-gradient(278deg, var(--bg2), var(--bg));
     overflow: hidden;
     z-index: 9999;
     display: flex;
@@ -1586,7 +1586,7 @@ div#modal-container {
 .banner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 5.5vw);
+    grid-template-rows: repeat(5, 5.5vw);
     grid-gap: 1rem;
     width: 100%;
     max-width: 700px;
@@ -1599,8 +1599,8 @@ div#modal-container {
     }
     
     .banner__item--1{
-      /* background-image: url('../images/handsome-serious-calm-guy-with-dark.png'); */
-      background-image: url('https://media.tenor.com/m4j29SAo0DgAAAAe/suraj-chattambinadu.png');
+      background-image: url('../images/handsome-serious-calm-guy-with-dark.png');
+      /* background-image: url('https://media.tenor.com/m4j29SAo0DgAAAAe/suraj-chattambinadu.png'); */
 
       grid-column: 1 / 1;
       grid-row: 1 / span 3;
@@ -1611,8 +1611,8 @@ div#modal-container {
       background-position: center;
     }
     .banner__item--2{
-      /* background-image: url('../images/vertical-shot-of-young-european-woman-in-glasses.png'); */
-      background-image: url('https://i.ytimg.com/vi/PydMZnfcexU/maxresdefault.jpg');
+      background-image: url('../images/vertical-shot-of-young-european-woman-in-glasses.png');
+      /* background-image: url('https://i.ytimg.com/vi/PydMZnfcexU/maxresdefault.jpg'); */
 
       grid-column: 1 / 1;
       grid-row: 4 / span 2;
@@ -1622,8 +1622,8 @@ div#modal-container {
       background-color: #219653;
     }
     .banner__item--3{
-        /* background-image: url('../images/pretty-young-asian-woman-makes-meditating.png'); */
-        background-image: url('https://media.licdn.com/dms/image/C5103AQHJhxxEu8u5pg/profile-displayphoto-shrink_800_800/0/1518847584705?e=2147483647&v=beta&t=jVBqIVc5TTYhGMjAeIpwOvo85BKzSSoFnmvK8er1fbw');
+        background-image: url('../images/pretty-young-asian-woman-makes-meditating.png');
+        /* background-image: url('https://media.licdn.com/dms/image/C5103AQHJhxxEu8u5pg/profile-displayphoto-shrink_800_800/0/1518847584705?e=2147483647&v=beta&t=jVBqIVc5TTYhGMjAeIpwOvo85BKzSSoFnmvK8er1fbw'); */
       grid-column: 2 / 2;
       grid-row: 1 / span 2;
       background-repeat:no-repeat;
@@ -1632,7 +1632,7 @@ div#modal-container {
       background-color: #60d3d9;
     }
     .banner__item--4{
-      /* background-image: url('../images/positive-smiling-handsome-caucasian-man-looks.png'); */
+
       background-image: url('../images/positive-dark-skinned-woman-dressed.png');
       grid-column: 2 / 2;
       grid-row: 6 / 3;
@@ -1642,7 +1642,7 @@ div#modal-container {
       background-color: #ff7e29;
     }
     .banner__item--5{
-      /* background-image: url('../images/positive-dark-skinned-woman-dressed.png'); */
+      
       background-image: url('../images/positive-smiling-handsome-caucasian-man-looks.png');
       grid-column: 3 / span 2;
       grid-row: 5 / 2;

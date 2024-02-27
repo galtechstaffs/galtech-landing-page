@@ -403,9 +403,7 @@ a:hover {
 
 	}
 
-	.marque-main {
-		width: 50%
-	}
+
 
 	.placement-left {
 		width: 50%
@@ -438,7 +436,6 @@ a:hover {
 	}
 
 	.marque-main {
-		width: 50%;
 		margin: 0 auto;
 		padding: 0
 	}
@@ -485,7 +482,7 @@ a:hover {
 @media (max-width:991px) {
     .banner {
 
-        grid-template-rows: repeat(6, 11vw);
+        grid-template-rows: repeat(5, 11vw);
 
     }
 	.logo {
@@ -652,9 +649,7 @@ a:hover {
 		padding-top: 40px
 	}
 
-	.marque-main {
-		width: 100%
-	}
+
 
 	/* .scrolling-text__item {
     height: 80px;
@@ -856,4 +851,36 @@ a:hover {
 	.scrolling-text__item img {
 		height: 70px
 	}
+    .banner {
+        grid-template-rows: repeat(6, 11vw);
+    }
+    .banner__item--1{
+        grid-column: 1 / 1;
+        grid-row: 1 / span 4;
+
+      }
+      .banner__item--2{
+        grid-column: 1 / 1;
+        grid-row: 5 / span 2;
+
+      }
+      .banner__item--3{
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+
+      }
+      .banner__item--4{
+  
+
+        grid-column: 2 / 2;
+        grid-row: 7 / 3;
+
+      }
+      .banner__item--5{
+        
+
+        grid-column: 3 / span 2;
+        grid-row: 7 / 1;
+
+      }
 }

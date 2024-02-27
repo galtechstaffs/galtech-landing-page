@@ -113,7 +113,7 @@ top_action2.forEach((element, i) => {
 
 }
 
-
+if (window.innerWidth > 990) {
 
 const card_up = document.querySelectorAll('.card-up');
 
@@ -135,7 +135,7 @@ card_up.forEach((element, i) => {
             }
         });
 });
-
+}
 const card_up2 = document.querySelectorAll('.card-up2');
 
 card_up2.forEach((element, i) => {
@@ -178,8 +178,8 @@ const botto_up = document.querySelectorAll('.bottom-top');
                 
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 60%',
-                        end: 'bottom 90%',
+                        start: 'top 100%',
+                        end: 'bottom 100%',
                         scrub: true,
                         markers: false,
                         toggleActions: 'play play reverse reverse'
@@ -197,7 +197,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                 element,
                 {
               
-                    translateX: screenWidth <= 1024 ? 0 : 50, // Adjust translateX based on screen width
+                    translateX: screenWidth <= 1024 ? 0 : 30, // Adjust translateX based on screen width
 
                 },
                 {
@@ -228,7 +228,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                 element,
                 {
               
-                    translateX: screenWidth <= 1024 ? 0 : -50, // Adjust translateX based on screen width
+                    translateX: screenWidth <= 1024 ? 0 : -30, // Adjust translateX based on screen width
 
                 },
                 {
@@ -252,7 +252,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
         
 
         
-     
+        if (window.innerWidth > 990) {
 
         const left_rotate_card = document.querySelectorAll('.left-right-rotate');
 
@@ -262,10 +262,10 @@ const botto_up = document.querySelectorAll('.bottom-top');
             gsap.fromTo(
                 element,
                 {
-                    rotation: -15,
-                    translateX: screenWidth > 1024 ? -70 : 0,
+                    rotation: -10,
+                    translateX: screenWidth > 1366 ? -70 : 0,
                     translateY: 25,
-                    scale: screenWidth > 1024 ? 1.1 : 1
+                    scale: screenWidth > 1366 ? 1.1 : 1
                   },
                   {
                     duration: 0.3,
@@ -286,7 +286,8 @@ const botto_up = document.querySelectorAll('.bottom-top');
             );
         });
 
-
+    }
+    if (window.innerWidth > 990) {
         const right_rotate_card = document.querySelectorAll('.right-left-rotate');
 
         right_rotate_card.forEach((element, i) => {
@@ -295,10 +296,10 @@ const botto_up = document.querySelectorAll('.bottom-top');
             gsap.fromTo(
                 element,
                 {
-                    rotation: 15,
-                    translateX: screenWidth > 1024 ? 70 : 0,
+                    rotation: 10,
+                    translateX: screenWidth > 1366 ? 70 : 0,
                     translateY: 25,
-                    scale: screenWidth > 1024 ? 1.1 : 1
+                    scale: screenWidth > 1366 ? 1.1 : 1
                   },
                   {
                     duration: 0.3,
@@ -318,6 +319,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                 }
             );
         });
+    }
 
 
 
