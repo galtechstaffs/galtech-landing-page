@@ -13,14 +13,18 @@ document.addEventListener("DOMContentLoaded", function() {
     var split = new SplitType(".main-head span", { type: "lines" });
     var tl = gsap.timeline();
     tl.from(split.lines, { opacity: 0, y: 40, duration: 0.3, ease: "back", stagger: 0.25 })
-        .from(".ring", { opacity: 0, y: 30, ease: "back", delay: 0.4 }, "-=1")
         .from(".sub-head", { opacity: 0, y: 40, ease: "back", delay: 1 }, "-=1")
 
-        .from(".btn-container", { opacity: 0, y: -40, ease: "back", delay: .7 }, "-=1")
-        .from(".logo, .header-left, .header-right", { opacity: 0, y: -40, ease: "back", delay: .7 }, "-=1")
-        .from(".overview", { opacity: 0, y: 30, ease: "back", delay: 0.4 }, "-=1")
-       
+        .from(" .hero-text", { opacity: 0, y: 40, ease: "back", delay: .5 }, "-=1")
+        .from(".btn-container", { opacity: 0, y: 40, ease: "back", delay: .7 }, "-=1")
 
+        .from(".logo, .header-left, .header-right", { opacity: 0, y: -40, ease: "back", delay: .6 }, "-=1")
+       
+        .from(".banner__item--1", { opacity: 0, y: -40, ease: "back", delay: 0.15 }, "-=1")
+        .from(".banner__item--2", { opacity: 0, y: 40, ease: "back", delay: 0.20 }, "-=1")
+        .from(".banner__item--3", { opacity: 0, y: -40, ease: "back", delay: 0.25 }, "-=1")
+        .from(".banner__item--4", { opacity: 0, y: 40, ease: "back", delay: 0.30 }, "-=1")
+        .from(".banner__item--5", { opacity: 0, x: 40, ease: "back", delay: 0.35 }, "-=1")
 
         
         
@@ -35,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollTrigger: {
               trigger: text,
               start: 'top 100%',
-              end: 'bottom 40%',
+              end: 'bottom 80%',
               scrub: true,
             },
           });
@@ -50,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollTrigger: {
               trigger: span,
               start: 'top 70%',
-              end: 'bottom 30%',
+              end: 'bottom 50%',
               scrub: true,
             },
           });
@@ -184,6 +188,69 @@ const botto_up = document.querySelectorAll('.bottom-top');
             );
         });
 
+        const right_left = document.querySelectorAll('.right-left');
+
+        right_left.forEach((element, i) => {
+            const screenWidth = window.innerWidth;
+
+            gsap.fromTo(
+                element,
+                {
+              
+                    translateX: screenWidth <= 1024 ? 0 : 50, // Adjust translateX based on screen width
+
+                },
+                {
+                    duration: 0.3,
+                    x: 0,
+          
+                    translateY: 0, // Set translateX to 0 as the final value
+
+                
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        end: 'bottom 100%',
+                        scrub: true,
+                        markers: false,
+                        toggleActions: 'play play reverse reverse'
+                    }
+                }
+            );
+        });
+
+        const left_right = document.querySelectorAll('.left-right');
+
+        left_right.forEach((element, i) => {
+            const screenWidth = window.innerWidth;
+
+            gsap.fromTo(
+                element,
+                {
+              
+                    translateX: screenWidth <= 1024 ? 0 : -50, // Adjust translateX based on screen width
+
+                },
+                {
+                    duration: 0.3,
+                    x: 0,
+          
+                    translateY: 0, // Set translateX to 0 as the final value
+
+                
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        end: 'bottom 100%',
+                        scrub: true,
+                        markers: false,
+                        toggleActions: 'play play reverse reverse'
+                    }
+                }
+            );
+        });
+        
+
         
      
 
@@ -196,7 +263,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                 element,
                 {
                     rotation: -15,
-                    translateX: screenWidth > 1024 ? -100 : 0,
+                    translateX: screenWidth > 1024 ? -70 : 0,
                     translateY: 25,
                     scale: screenWidth > 1024 ? 1.1 : 1
                   },
@@ -229,7 +296,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                 element,
                 {
                     rotation: 15,
-                    translateX: screenWidth > 1024 ? 100 : 0,
+                    translateX: screenWidth > 1024 ? 70 : 0,
                     translateY: 25,
                     scale: screenWidth > 1024 ? 1.1 : 1
                   },

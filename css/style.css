@@ -345,7 +345,7 @@ footer .logo{
     align-items: center;
     padding-top: 100px;
     padding-bottom: 40px;
-    min-height: 85vh;
+    min-height: 75vh;
 
 }
 .hero-left{
@@ -499,11 +499,9 @@ h1.heading{
 .scrolling-text_inner.direction-left>div {
     animation: marquee-left var(--marquee-speed) linear infinite;
     will-change: transform;
+    flex-shrink: 0;
 }
-.scrolling-text_inner.direction-right>div {
-    animation: marquee-right var(--marquee-speed) linear infinite;
-    will-change: transform;
-}
+
 
 .scrolling-text_inner>div {
     display: flex;
@@ -514,6 +512,7 @@ h1.heading{
 .scrolling-text__item {
     padding: 0 2vw;
     /* height: 110px; */
+    display: flex;
 
 }
 .scrolling-text__item img{
@@ -525,7 +524,7 @@ h1.heading{
 }
 .placement-marquee {
     /* mask-image: linear-gradient(to left, transparent 5%, black 100%); */
-    mask-image: linear-gradient(to right, transparent 14%, black 50%);
+    mask-image: linear-gradient(to right, transparent 5%, black 50%);
 }
 .marquee-sec.scrolling-text{
     mask-image: linear-gradient(to left, transparent 5%, black 50%);
@@ -554,10 +553,7 @@ h1.heading{
     from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-@keyframes marquee-right {
-    from { transform: translateX(-50%); }
-  to { transform: translateX(0%); }
-}
+
 /* marquee end */
 
 /* row start */
@@ -589,11 +585,12 @@ h1.heading{
     transform:  skew(0deg) translateX(-3px)!important;
     transition: .3s;
 }
-/* row end */
-/* overview start */
 .section{
     padding: 40px 0;
 }
+/* row end */
+/* overview start */
+/* 
 .overview.section{
     padding-top: 80px;
 }
@@ -615,9 +612,7 @@ h1.heading{
     flex-direction: column;
     gap: 10px;
 }
-/* .overview .column-box h5, .overview .column-box h6{
-    transform:  skew(15deg);;
-} */
+
 .column-box span {
     color: var(--gray);
     -webkit-text-fill-color: #000;
@@ -643,7 +638,7 @@ h1.heading{
 .column-box h6{
     opacity: .8;
     line-height: 20px;
-}
+} */
 /* overview end */
 
 /* marquee start */
@@ -660,14 +655,13 @@ h1.heading{
 }
 .marque-main{
     /* margin: 50px 0; */
-    padding-left: 80px;
     display: flex;
    /* transform:  rotate(-8deg); */
     gap: 10px;
 
    
     /* width: 50%; */
-    width: 700px;
+    /* width: 700px; */
     overflow: hidden;
     /* max-height: calc(100vh - 80px); */
    
@@ -997,24 +991,42 @@ a.thumbnail-vid img{
     width: 33.3%;
     padding: 20px;
 }
-.testimonial img {
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 136px;
-    height: 136px;
-    margin: auto;
-    display: block;
-    color: #f2f2f2;
-    font-size: 18px;
-    line-height: 46px;
-    text-align: center;
-    position: relative;
-    border-radius: 50%;
-    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    object-fit: cover;
-
+.testimonial4_slide h4{
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: var(--red);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
+
+.carousel-inner:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    background: url(../images/quotes.png);
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .6;
+}
+.carousel-inner:after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0px;
+    background: url(../images/quotes.png);
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .6;
+    transform: rotate(180deg);
+}
+
 /* ------testimonial  close-------*/
 /* testimonials end */
 
@@ -1569,57 +1581,75 @@ div#modal-container {
 
 
 
+/* banner grid start */
 
-
-
-/* .tilt-box{
-    transition:all .3s;
-}
-.t_over{
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    z-index: 1;
-}
-
-.t_over:nth-child(1) { left: 0; top: 0; }
-.t_over:nth-child(2) { left: 50%; top: 0; } 
-.t_over:nth-child(3) { left: 0%; top: 50%; }
-.t_over:nth-child(4) { left: 50%; top: 50%; }
-
-
-
-
-
-
-
-
-
-
-.t_over:nth-child(1):hover ~ .tilt-box{ transform: rotateX(-15deg) rotateY(15deg) }
- 
-
-    .t_over:nth-child(2):hover ~ .tilt-box{ transform: rotateX(-15deg) rotateY(-15deg) }
-
-        .t_over:nth-child(3):hover ~ .tilt-box{ transform: rotateX(15deg) rotateY(15deg) }
-
-
-
-    .t_over:nth-child(4):hover ~ .tilt-box{ transform: rotateX(15deg) rotateY(-15deg) } */
-
-
-
-
-
-
-    /* @media (max-width:1360px){
-    [data-aos=fade-right] {
-        transform: translate3d(-10px,0,0);
+.banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 5.5vw);
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 700px;
+    padding-left: 30px;
+  }
+  
+    .banner__item {
+      position: relative;
+      overflow: hidden;
     }
-    [data-aos=fade-left] {
-        transform: translate3d(10px,0,0);
+    
+    .banner__item--1{
+      /* background-image: url('../images/handsome-serious-calm-guy-with-dark.png'); */
+      background-image: url('https://media.tenor.com/m4j29SAo0DgAAAAe/suraj-chattambinadu.png');
+
+      grid-column: 1 / 1;
+      grid-row: 1 / span 3;
+      background-repeat:no-repeat;
+      background-size: cover;
+      border-radius:60px;
+      background-color: #6e1fed;
+      background-position: center;
     }
-    [data-aos=fade-up] {
-        transform: translate3d(0,60px,0);
+    .banner__item--2{
+      /* background-image: url('../images/vertical-shot-of-young-european-woman-in-glasses.png'); */
+      background-image: url('https://i.ytimg.com/vi/PydMZnfcexU/maxresdefault.jpg');
+
+      grid-column: 1 / 1;
+      grid-row: 4 / span 2;
+      background-repeat:no-repeat;
+      background-size: cover;
+      border-radius:60px;
+      background-color: #219653;
     }
-} */
+    .banner__item--3{
+        /* background-image: url('../images/pretty-young-asian-woman-makes-meditating.png'); */
+        background-image: url('https://media.licdn.com/dms/image/C5103AQHJhxxEu8u5pg/profile-displayphoto-shrink_800_800/0/1518847584705?e=2147483647&v=beta&t=jVBqIVc5TTYhGMjAeIpwOvo85BKzSSoFnmvK8er1fbw');
+      grid-column: 2 / 2;
+      grid-row: 1 / span 2;
+      background-repeat:no-repeat;
+      background-size: cover;
+      border-radius:60px;
+      background-color: #60d3d9;
+    }
+    .banner__item--4{
+      /* background-image: url('../images/positive-smiling-handsome-caucasian-man-looks.png'); */
+      background-image: url('../images/positive-dark-skinned-woman-dressed.png');
+      grid-column: 2 / 2;
+      grid-row: 6 / 3;
+      background-repeat:no-repeat;
+      background-size: cover;
+      border-radius:60px;
+      background-color: #ff7e29;
+    }
+    .banner__item--5{
+      /* background-image: url('../images/positive-dark-skinned-woman-dressed.png'); */
+      background-image: url('../images/positive-smiling-handsome-caucasian-man-looks.png');
+      grid-column: 3 / span 2;
+      grid-row: 5 / 2;
+      background-repeat:no-repeat;
+      background-size: cover;
+      border-radius:60px;
+      background-color: #f4b840;
+    }
+  
+/* bannre grid end */
