@@ -800,6 +800,11 @@ a.thumbnail-vid img{
   background-color:#29314729;
   transition: .5s;
 }
+.light .each-accordionbox{
+
+    background-color:#efeae0;
+
+  }
 .each-accordionbox h3{
     position: relative;
 }
