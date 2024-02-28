@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var tl = gsap.timeline();
     tl.from(split.lines, { opacity: 0, y: 40, duration: 0.3, ease: "back", stagger: 0.25 })
         .from(".sub-head", { opacity: 0, y: 40, ease: "back", delay: 1 }, "-=1")
+        .from(".social_icons li", { opacity: 0, x: -40, ease: "back" }, "-=1")
+
 
         .from(" .hero-text", { opacity: 0, y: 40, ease: "back", delay: .5 }, "-=1")
         .from(".btn-container", { opacity: 0, y: 40, ease: "back", delay: .7 }, "-=1")
@@ -21,10 +23,22 @@ document.addEventListener("DOMContentLoaded", function() {
         .from(".logo, .header-left, .header-right", { opacity: 0, y: -40, ease: "back", delay: 0 }, "-=1")
        
         .from(".banner__item--1", { opacity: 0, y: -40, ease: "back", delay: 0.15 }, "-=1")
+        .from(".ad_1", { opacity: 0, y: -40, ease: "back", delay: 0.3 }, "-=1")
+
         .from(".banner__item--2", { opacity: 0, y: 40, ease: "back", delay: 0.20 }, "-=1")
+        
+
         .from(".banner__item--3", { opacity: 0, y: -40, ease: "back", delay: 0.25 }, "-=1")
+        .from(".ad_2", { opacity: 0, y: -40, ease: "back", delay: 0.4 }, "-=1")
+
         .from(".banner__item--4", { opacity: 0, y: 40, ease: "back", delay: 0.30 }, "-=1")
+        .from(".ad_3", { opacity: 0, y: 40, ease: "back", delay: 0.5 }, "-=1")
+
         .from(".banner__item--5", { opacity: 0, x: 40, ease: "back", delay: 0.35 }, "-=1")
+        .from(".ad_4", { opacity: 0, x: 40, ease: "back", delay: 0.6 }, "-=1")
+
+
+
 
         
         
@@ -127,7 +141,7 @@ card_up.forEach((element, i) => {
             y: 0,
             scrollTrigger: {
                 trigger: element,
-                start: 'top 60%',
+                start: 'top 80%',
                         end: 'bottom 90%',
                 scrub: true,
                 markers: false,
@@ -276,7 +290,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                     scale: 1,
                     scrollTrigger: {
                       trigger: element,
-                      start: 'top 50%',
+                      start: 'top 80%',
                       end: 'bottom 90%',
                       scrub: true,
                       markers: false,
@@ -310,7 +324,7 @@ const botto_up = document.querySelectorAll('.bottom-top');
                     scale: 1,
                     scrollTrigger: {
                       trigger: element,
-                      start: 'top 60%',
+                      start: 'top 80%',
                       end: 'bottom 90%',
                       scrub: true,
                       markers: false,
