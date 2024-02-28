@@ -425,15 +425,7 @@ a:hover {
 	.placement-left {
 		width: 50%
 	}
-    .switch{
-        position: fixed;
-        left: auto;
-        right: 15px;
-        top:auto;
-        bottom: 60px;
-        z-index: 999;
-        cursor: pointer;
-    }
+   
 }
 
 @media (min-width:768px) {

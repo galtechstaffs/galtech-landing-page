@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .from(" .hero-text", { opacity: 0, y: 40, ease: "back", delay: .5 }, "-=1")
         .from(".btn-container", { opacity: 0, y: 40, ease: "back", delay: .7 }, "-=1")
 
-        .from(".logo, .header-left, .header-right, .switch", { opacity: 0, y: -40, ease: "back", delay: 0 }, "-=1")
+        .from(".header-logo, .header-left, .header-right, .switch", { opacity: 0, y: -40, ease: "back", delay: 0 }, "-=1")
        
         .from(".banner__item--1", { opacity: 0, y: -40, ease: "back", delay: 0.15 }, "-=1")
         .from(".ad_1", { opacity: 0, y: -40, ease: "back", delay: 0.3 }, "-=1")

@@ -113,9 +113,6 @@ header{
     /* padding: 5px; */
     /* padding: 5px 10px; */
     
-  
-
-
 }
 .logo:before {
     content: '';
@@ -133,6 +130,16 @@ header{
     right: 180px;
     position: fixed;
 }
+.dark-logo{
+    display: none;
+}
+.light .light-logo{
+    display: none;
+}
+.light .dark-logo{
+    display: block;
+}
+
 .scroll-start .logo:before , .scroll-start .logo:after{
     display: none;
 }
@@ -412,6 +419,7 @@ h1.heading{
     gap: 20px;
     align-items: center;
     z-index: 1;
+    flex-flow: wrap;
 }
 .shape1 {
     position: absolute;
@@ -504,6 +512,15 @@ h1.heading{
     overflow: hidden;
     border-top: 1px solid var(--gray2);
     border-bottom: 1px solid var(--gray2);
+}
+.light div#tools .scrolling-text_inner {
+    background-color: #00000024;
+    mask-image: none!important;
+    border: none;
+}
+.light div#tools {
+
+    mask-image: none!important;
 }
 .placement-marquee .scrolling-text_inner {
 
@@ -891,7 +908,9 @@ a.thumbnail-vid img{
 /* testimonials start */
 
 
-
+.light .testimonial{
+    background: none;
+}
 .testimonial:after {
     position: absolute;
     top: -0 !important;
@@ -908,7 +927,7 @@ a.thumbnail-vid img{
 }
 .light .testimonial:after {
 
-    background: #d2d2d2;
+    display: none;
 
 }
 .testimonial {
@@ -971,6 +990,9 @@ a.thumbnail-vid img{
     background-size: contain;
     opacity: .6;
     transform: rotate(180deg);
+}
+.light .carousel-inner:before, .light .carousel-inner:after{
+    filter: invert(1);
 }
 
 /* ------testimonial  close-------*/
@@ -1382,7 +1404,7 @@ div#modal-container {
 }
 .light .card:after {
 
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #d51c23b0);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #00000030);
 
   }
 .card:nth-child(1):before {
@@ -1471,89 +1493,6 @@ div#modal-container {
 }
 
   /* cards end */
-
-  /* newsbox start */
-
-  .newsbox {
-    background-color: rgba(255,255,255,.9);
-    position: fixed;
-    overflow: unset;
-    bottom: 5rem;
-    z-index: 1;
-    right: 1px;
-    z-index: 9;
-    
-    padding-bottom: 1rem;
-    border-radius: 6px 0 0 6px;
-    box-shadow: 6px 8px 20px rgba(0,0,0,.5);
-    transition: all .3s linear;
-    width: 0;
-      padding: 0;
-      z-index: 99;
-      }
-
-.newsbox:hover{
-        width: 360px;
-        padding: 15px;
-        }
-      .newsbox-a {
-        transform: rotate(-90deg);
-        position: absolute;
-        left: -71px;
-        bottom: 2.6rem;
-        background-color: var(--red);
-        padding: 5px 10px;
-        border-radius: 0.3rem 0.3rem 0 0;
-        display: flex;
-        white-space: nowrap;
-    }
-    .newsbox-a h4{
-        color: white;
-    }
-    .newsbox .news-container {
-        max-height: 120px;
-        overflow: auto;
-        transition: all .3s linear;
-    }
-    .newsbox ul.newslist {
-        position: relative;
-        top: 0;
-        animation: scroll 20s linear 1s infinite;
-        transition: all 7s linear;
-        padding: 0;
-    }
-    
-@keyframes scroll {
-    100% {
-        top: -450px;
-    }
-
-}
-.newsbox ul.newslist li {
-    margin-bottom: 0.3rem;
-    padding-left: 12px;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px dashed rgba(0,0,0,.2);
-    max-height: none;
-    overflow: hidden;
-    line-height: 1.2rem;
-    margin-top: 0.3rem;
-}
-.newsbox ul.newslist li a {
-    display: flex;
-    padding: 5px;
-}
-.newsbox ul.newslist li a:before {
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-left: -12px;
-    font-size: 1rem;
-    margin-right: 0.35rem;
-    color: var(--red);
-}
-
-
 
 
 
@@ -1719,14 +1658,20 @@ justify-content: center;
 
 .switch{
     position: fixed;
-    left: 10px;
-    top:25px;
+    right: 0px;
+    top: 20vh;
     z-index: 999;
     cursor: pointer;
+    background-color: var(--white);
+    padding:8px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .switch img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 .light .switch img{
     filter: invert(1);
@@ -1734,4 +1679,17 @@ justify-content: center;
 .banner-mob{
     display: none;
     width: 100%;
+}
+.whatsapp{
+    width: 45px;
+    border-radius: 50%;
+    background: #30a61a;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp img{
+    width: 25px;
+    height: 25px;
 }
