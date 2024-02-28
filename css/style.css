@@ -84,7 +84,7 @@ header{
 }
 .scroll-start header {
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid var(--gray2);
 }
 .textContainer {
     max-height: 100%;
@@ -111,18 +111,18 @@ header{
 }
 .logo:before {
     content: '';
-    background-color: #232530;
-    width: calc(50% - 95px);
+    background-color: var(--gray2);
+    width: calc(50vw - 90px);
     height: 1px;
-    left: 0;
+    left: 180px;
     position: fixed;
 }
 .logo:after{
     content: '';
-    background-color: #232530;
-    width: calc(50% - 95px);
+    background-color: var(--gray2);
+    width: calc(50vw - 90px);
     height: 1px;
-    right: 0;
+    right: 180px;
     position: fixed;
 }
 .scroll-start .logo:before , .scroll-start .logo:after{
@@ -131,14 +131,19 @@ header{
 footer .logo{
 
     background: initial;
+    padding: 0;
 
 }
+
 .logo img{
     max-width: 180px;
     height: 50px;
     object-fit: contain;
 }
-
+footer .logo img {
+    height: 80px;
+    max-width: 200px;
+}
 .nav{
     display: flex;
     align-items: center;
@@ -273,7 +278,7 @@ footer .logo{
     transform: translateX(-50%);
     height: 100vh;
     width: 1px;
-    background-color:  rgba(255, 255, 255, 0.08);
+    background-color:  var(--gray2);
     
 }
 .social_icons li{
@@ -831,86 +836,6 @@ a.thumbnail-vid img{
 
 
 /* why choose start */
-/* Why Choose Us */
-.why_choose{ 
-    width:100%; 
-    margin: 0 0 50px; 
-    font-family: 'Raleway', sans-serif; 
-  }
-  .why_choose_head{ 
-    width:100%; 
-    text-align:center; 
-    padding:30px;
-  }
-  .why_choose_head h1{ 
-    width:100%; 
-    color: #000000; 
-    text-align:center; 
-    font-size:32px; 
-    font-family: 'Raleway-Medium', sans-serif;
-  }
-  .why_choose_head h1 span{ 
-    border-bottom: 2px solid #a2437e; 
-  }
-  .text-down { 
-    position:relative; 
-    overflow:hidden;
-    /* border: 2px solid var(--gray2); */
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  .text-down img{ 
-    width:100%; 
-    height:240px;
-    object-fit: cover;
-  }
-
-  .text-down .textbox { 
-    width:100%; 
-    position:absolute; 
-    bottom:0; 
-    left:0; 
-    /* margin-bottom:-265px; */
-    border-radius:5px;
-    background: linear-gradient(1deg, var(--black), var(--black), transparent); 
-    -webkit-transition: all 0.7s ease; 
-    transition: all 0.4s ease; 
-    padding: 20px;
-  }
-  .text-down:hover .textbox { 
-    margin-bottom:0;
-  }
-  .text-down img{
-    scale: 1.1;
-    transition: .4s;
-  }
-  .text-down:hover img{
-    scale: 1.2;
-    transition: .4s;
-  }
-  .details{ 
-    width:100%; 
-    color:rgba(255,255,255,1); 
-    font-size:16px;
-    overflow: auto;
-    display: none;
-    text-align: center;
-  }
-  .text-down:hover   .details{
-    display: block;
-  }
-  .text { 
-    text-align:center; 
-    padding-top: 0px; 
-    color:rgba(255,255,255,1); 
-    margin: 0;
-    padding-bottom: 5px;
-    padding-top: 10px;
-
-    position: relative;
-    margin-top: -10px;
-
-  }
 
   .choose-row{
     margin-left: -15px;
@@ -1037,7 +962,7 @@ a.thumbnail-vid img{
    
     padding: 30px 0;
     position: relative;
-    border-top: 1px solid #393939;
+    border-top: 1px solid var(--gray2);
 }
 
 .footer-head{
@@ -1081,7 +1006,7 @@ a.thumbnail-vid img{
     cursor: pointer;
 }
 .footer-child h6{
-    color: white;
+    color: var(--white);
     font-weight: 400;
 }
 .footer-column{
@@ -1103,17 +1028,17 @@ a.thumbnail-vid img{
 
 .footer .nav2 a{
     color: white;
-    line-height: 20px;
+    line-height: 16px;
     font-size: 14px;
     display: block;
-    padding: 5px 0;
+    padding: 8px 0;
     font-weight: 400;
 }
 
     
 
 .last-footer{
-    border-top: 1px solid #393939;
+    border-top: 1px solid var(--gray2);
     padding-top: 30px;
     text-align: center;
 }
@@ -1235,6 +1160,8 @@ div#modal-container {
     top: 30px;
     color: var(--white);
     font-size: 30px;
+    filter: invert(1);
+    cursor: pointer;
 }
 
 

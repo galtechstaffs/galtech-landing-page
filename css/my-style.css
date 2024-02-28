@@ -16,7 +16,8 @@ html {
 	font-size: 14px;
 	line-height: 1.8;
 	font-family: 'Poppins', sans-serif;
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
+    height: auto;
 }
 /* body{
     overflow-x: hidden;
@@ -480,6 +481,12 @@ a:hover {
 }
 
 @media (max-width:991px) {
+    .logo:after, .logo:before{
+        display: none;
+    }
+  header {
+        border-bottom: 1px solid var(--gray2);
+    }
     .banner {
 
         grid-template-rows: repeat(5, 11vw);
@@ -581,7 +588,7 @@ a:hover {
 
 	.container.hero-container {
 		padding-top: 60px;
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
     }
     .hero-right {
 
@@ -772,7 +779,7 @@ a:hover {
 
 	.footer-column .row {
 		row-gap: 0;
-		padding-top: 15px
+		/* padding-top: 15px */
 	}
 
 	.last-footer {
@@ -785,6 +792,16 @@ a:hover {
 }
 
 @media (max-width:440px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .carousel-inner {
+        margin-top: 0px;
+    }
+    .carousel-inner:before, .carousel-inner:after{
+        display: none;
+    }
 	h1 {
 		font-size: 28px;
 		line-height: 36px;
@@ -849,8 +866,14 @@ a:hover {
 
 	/* .scrolling-text__item{height:70px} */
 	.scrolling-text__item img {
-		height: 70px
+		height: 75px;
+        width: 120px;
+        padding: 0 7px;
 	}
+    .scrolling-text__item {
+        padding: 0;
+
+    }
     .banner {
         grid-template-rows: repeat(6, 11vw);
     }
@@ -883,4 +906,16 @@ a:hover {
         grid-row: 7 / 1;
 
       }
+      p {
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+.each-title{
+    font-weight: 500;
+    font-size: 14px;
+}
 }
