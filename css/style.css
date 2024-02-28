@@ -81,6 +81,9 @@ header{
     width: 25px;
     height: 25px;
 }
+.light .top-action img{
+    filter: invert(1);
+}
 .scroll-start .header-align {
 
     height: 75px;
@@ -107,7 +110,7 @@ header{
     display: flex;
     /* z-index: 9;
     background: var(--bg); */
-    padding: 5px;
+    /* padding: 5px; */
     /* padding: 5px 10px; */
     
   
@@ -117,7 +120,7 @@ header{
 .logo:before {
     content: '';
     background-color: var(--gray2);
-    width: calc(50vw - 90px);
+    width: calc(50vw - 95px);
     height: 1px;
     left: 180px;
     position: fixed;
@@ -125,7 +128,7 @@ header{
 .logo:after{
     content: '';
     background-color: var(--gray2);
-    width: calc(50vw - 90px);
+    width: calc(50vw - 95px);
     height: 1px;
     right: 180px;
     position: fixed;
@@ -278,7 +281,7 @@ footer .logo img {
 .social_icons:before{
     content: "";
     position: absolute;
-    top: -37.5vh;
+    top: -40vh;
     left: 50%;
     transform: translateX(-50%);
     height: 100vh;
@@ -297,6 +300,9 @@ footer .logo img {
     width: 22px;
     height: 22px;
     object-fit: contain;
+}
+.light .social_icons img{
+    filter: invert(1);
 }
 .social_icons a:hover img{
     animation-name: jello;
@@ -496,8 +502,8 @@ h1.heading{
     font-weight: 500;
     padding: 30px 0;
     overflow: hidden;
-    border-top: 1px solid #e9e9e954;
-    border-bottom: 1px solid #e9e9e954;
+    border-top: 1px solid var(--gray2);
+    border-bottom: 1px solid var(--gray2);
 }
 .placement-marquee .scrolling-text_inner {
 
@@ -807,7 +813,7 @@ a.thumbnail-vid img{
   background-position: center;
   border-radius:6px;
   font-size:20px;
-  color:var(--white);
+  color:#fff;
   padding:0px 12px;
    transition: all .5s;
 }
@@ -895,7 +901,11 @@ a.thumbnail-vid img{
     opacity: .8;
 
 }
+.light .testimonial:after {
 
+    background: #d2d2d2;
+
+}
 .testimonial {
 
     position: relative;
@@ -929,6 +939,7 @@ a.thumbnail-vid img{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    color: white;
 }
 
 .carousel-inner:before{
@@ -971,7 +982,7 @@ a.thumbnail-vid img{
 }
 
 .footer-head{
-    color: white;
+    color: var(--white);
     font-weight: 700;
     font-size: 18px;
     display: flex;
@@ -983,12 +994,18 @@ a.thumbnail-vid img{
 .footer-head span{
     width: 60px;
     height: 1px;
-    background-color: white;
+    background-color: var(--white);
     display: block;
 }
 .footer-child{
     display: flex;
     gap:20px;
+}
+.footer-child a{
+        font-size: 16px;
+        color: var(--white);
+        font-weight: 400;
+    
 }
 .social-icons{
     display: flex;
@@ -1004,11 +1021,17 @@ a.thumbnail-vid img{
     height: 22px;
     object-fit: contain;
 }
+.light .icon {
+    filter: invert(1);
+}
 .social-icons img{
     width: 22px;
     height: 22px;
     object-fit: contain;
     cursor: pointer;
+}
+.light .social-icons img {
+    filter: invert(1);
 }
 .footer-child h6{
     color: var(--white);
@@ -1032,7 +1055,7 @@ a.thumbnail-vid img{
 }
 
 .footer .nav2 a{
-    color: white;
+    color: var(--white);
     line-height: 16px;
     font-size: 14px;
     display: block;
@@ -1094,6 +1117,12 @@ a.thumbnail-vid img{
         background-size: contain;
         transform: translateY(-50%);
         filter: brightness(0) invert(1);
+}
+.light .join-card:not(:first-child)::before {
+
+
+
+    filter: brightness(0) invert(.5);
 }
 .join-card:not(:last-child)::after{
     filter: brightness(0) invert(1);
@@ -1346,6 +1375,11 @@ div#modal-container {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
+.light .card:after {
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #d51c23b0);
+
+  }
 .card:nth-child(1):before {
   background-image: url(https://img.freepik.com/free-photo/full-shot-smiley-students-library_23-2149647046.jpg);
   background-position: center;
@@ -1375,12 +1409,14 @@ div#modal-container {
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.2;
+  color: white;
 }
 
 .copy {
   font-size: 1.125rem;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 1.35;
+  color: white;
 }
 
 
@@ -1465,6 +1501,9 @@ div#modal-container {
         border-radius: 0.3rem 0.3rem 0 0;
         display: flex;
         white-space: nowrap;
+    }
+    .newsbox-a h4{
+        color: white;
     }
     .newsbox .news-container {
         max-height: 120px;
@@ -1589,17 +1628,21 @@ div#modal-container {
     .ad_banner{
         position: absolute;
         color: var(--white);
-        padding: 10px;
+        padding: 10px 20px;
 
 background: rgba(255, 255, 255, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
 
-min-width: 150px;
+/* min-width: 150px; */
 text-align: center;
+height: 44px;
+display: flex;
+align-items: center;
+justify-content: center;
     }
     
     .ad_1{
@@ -1611,7 +1654,7 @@ text-align: center;
         top: -15px;
     }
     .ad_3{
-        right: -145px ;
+        right: -105px ;
         bottom: 30px;
     }
     .ad_4{
@@ -1619,3 +1662,71 @@ text-align: center;
         top: 20px;
     }
 /* bannre grid end */
+/* gsap style start */
+.text {
+
+    width: 100%;
+    color: rgb(182, 182, 182, 0.2);
+    background: linear-gradient(to right, #c9c9c9, #ffffff) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(1,1,1,1) 1s;
+    
+
+
+  }
+  .text span{
+
+    width: 100%;
+    color: rgb(182, 182, 182, 0.2);
+    background: linear-gradient(to right, var(--red), var(--red)) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+    
+
+
+  }
+  .light .text {
+
+    color: #00000033;
+    background: linear-gradient(to right, #1E1E1E, #000) no-repeat;
+    -webkit-background-clip: text;
+
+    
+
+
+  }
+  .light .text span{
+
+
+    color: #00000033;
+    background: linear-gradient(to right, var(--red), var(--red)) no-repeat;
+    -webkit-background-clip: text;
+
+    
+
+
+  }
+/* gsap style end */
+
+.switch{
+    position: fixed;
+    left: 10px;
+    top:25px;
+    z-index: 999;
+    cursor: pointer;
+}
+.switch img{
+    width: 35px;
+    height: 35px;
+}
+.light .switch img{
+    filter: invert(1);
+}
+.banner-mob{
+    display: none;
+    width: 100%;
+}

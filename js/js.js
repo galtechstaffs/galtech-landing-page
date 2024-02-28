@@ -82,6 +82,26 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+
+
+    document.querySelector(".switch").addEventListener('click', function() {
+        toggleMenuFunction();
+    });
+
+
+
+    function toggleMenuFunction() {
+        var selector = document.querySelector(".body");
+
+        if (selector.classList.contains('light')) {
+            selector.classList.remove('light');
+        } else {
+            selector.classList.add('light');
+        }
+    }
+
+
 });
 
 

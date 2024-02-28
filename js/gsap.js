@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .from(" .hero-text", { opacity: 0, y: 40, ease: "back", delay: .5 }, "-=1")
         .from(".btn-container", { opacity: 0, y: 40, ease: "back", delay: .7 }, "-=1")
 
-        .from(".logo, .header-left, .header-right", { opacity: 0, y: -40, ease: "back", delay: 0 }, "-=1")
+        .from(".logo, .header-left, .header-right, .switch", { opacity: 0, y: -40, ease: "back", delay: 0 }, "-=1")
        
         .from(".banner__item--1", { opacity: 0, y: -40, ease: "back", delay: 0.15 }, "-=1")
         .from(".ad_1", { opacity: 0, y: -40, ease: "back", delay: 0.3 }, "-=1")
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .from(".ad_2", { opacity: 0, y: -40, ease: "back", delay: 0.4 }, "-=1")
 
         .from(".banner__item--4", { opacity: 0, y: 40, ease: "back", delay: 0.30 }, "-=1")
-        .from(".ad_3", { opacity: 0, y: 40, ease: "back", delay: 0.5 }, "-=1")
+        .from(".ad_3, .banner-mob", { opacity: 0, y: 40, ease: "back", delay: 0.5 }, "-=1")
 
         .from(".banner__item--5", { opacity: 0, x: 40, ease: "back", delay: 0.35 }, "-=1")
         .from(".ad_4", { opacity: 0, x: 40, ease: "back", delay: 0.6 }, "-=1")
