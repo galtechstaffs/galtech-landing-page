@@ -4,6 +4,51 @@
     -webkit-text-fill-color: transparent; */
     color:var(--red);
   }
+  .banner-join:before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/arrow.png);
+    z-index: 9999;
+    top: -10px;
+    left: -240px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+.scroll-start .banner-join:before{
+    opacity: 0;
+}
+.head-attention {
+    width: fit-content;
+    display: block;
+    position: relative;
+    background: linear-gradient(254deg, white, #a8a8a8);
+    padding: 7px 25px;
+    margin: 10px 0 10px 10px;
+    transform: rotate(-3deg);
+    letter-spacing: 5px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 0px 0 var(--red);
+   
+}
+.light .head-attention {
+    background: linear-gradient(254deg, #ffffffb5, #e7ddca);
+}
+/* .head-attention .char {
+    background: -webkit-linear-gradient(#eee, #3b3636);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+/* .head-attention:before{
+    content: "";
+    border: 1px solid red;
+    border-radius: 208px;
+    transform: rotate(-3deg);
+} */
+
   .transition{
     transition: .4s;
   }
@@ -556,11 +601,15 @@ h1.heading{
     padding: 0 10px;
 }
 .placement-marquee {
-    /* mask-image: linear-gradient(to left, transparent 5%, black 100%); */
+  
     mask-image: linear-gradient(to right, transparent 5%, black 50%);
 }
 .marquee-sec.scrolling-text{
     mask-image: linear-gradient(to left, transparent 5%, black 50%);
+}
+.placement-marquee, .marquee-sec.scrolling-text {
+  
+    mask-image:none;
 }
 /* .scrolling-text_inner.direction-left {
     mask-image: linear-gradient(to right, transparent 12%, black 100%);
@@ -841,7 +890,7 @@ a.thumbnail-vid img{
 }
 
 .each-title{
-  color:var(--red);
+  color:var(--white);
   padding:15px 70px 15px;
   font-weight: 600;
 
@@ -1688,8 +1737,24 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+.whatsapp::before {
+    background: #30a61a;
+    border-radius: inherit;
+    content: '';
+    filter: blur(6px);
+    opacity: .75;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 .whatsapp img{
     width: 25px;
     height: 25px;
 }
+
+
