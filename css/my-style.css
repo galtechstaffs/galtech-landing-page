@@ -1017,13 +1017,13 @@ a:hover {
 
     }
 
-      p {
-        font-size: 14px;
-    }
-    h6 {
+      p, .copy, h6 {
         font-size: 14px;
         line-height: 24px;
+
     }
+
+    
     
 .each-title{
     font-weight: 500;

@@ -1509,9 +1509,9 @@ div#modal-container {
 }
 
 .copy {
-  font-size: 1.125rem;
+  font-size: 16px;
   /* font-style: italic; */
-  line-height: 1.35;
+  line-height: 26px;
   color: white;
 }
 
@@ -1626,6 +1626,7 @@ div#modal-container {
       background-size: cover;
       border-radius:60px;
       background-color: #ff7e29;
+      background-position: bottom;
     }
     .banner__item--5{
       
