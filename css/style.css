@@ -4,7 +4,7 @@
     -webkit-text-fill-color: transparent; */
     color:var(--red);
   }
-  .banner-join:before {
+  /* .banner-join:after {
     content: '';
     position: absolute;
     width: 300px;
@@ -17,6 +17,24 @@
     background-size: contain;
     background-repeat: no-repeat;
     transition: .4s;
+} */
+.banner-join:after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background: url(../images/arrow2.png);
+    z-index: 9999;
+    top: 60px;
+    left: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .4s;
+    transform: rotate(5deg);
+}
+.light .banner-join:after{
+    filter: invert(1);
 }
 .scroll-start .banner-join:before{
     opacity: 0;
@@ -25,17 +43,18 @@
     width: fit-content;
     display: block;
     position: relative;
-    background: linear-gradient(254deg, white, #a8a8a8);
+    background: linear-gradient(180deg, white, #a8a8a8);
     padding: 7px 25px;
     margin: 10px 0 10px 10px;
     transform: rotate(-3deg);
     letter-spacing: 5px;
     border-radius: 6px;
     box-shadow: 5px 5px 0px 0 var(--red);
+    text-transform: uppercase;
    
 }
 .light .head-attention {
-    background: linear-gradient(254deg, #ffffffb5, #e7ddca);
+    background: linear-gradient(180deg, #ffffffb5, #e7ddca);
 }
 /* .head-attention .char {
     background: -webkit-linear-gradient(#eee, #3b3636);
@@ -607,7 +626,7 @@ h1.heading{
 .marquee-sec.scrolling-text{
     mask-image: linear-gradient(to left, transparent 5%, black 50%);
 }
-.placement-marquee, .marquee-sec.scrolling-text {
+.light .placement-marquee, .light .marquee-sec.scrolling-text {
   
     mask-image:none;
 }
@@ -859,7 +878,7 @@ a.thumbnail-vid img{
 }
 .each-accordionbox{
   margin:0px;
-  padding-bottom:15px;
+  /* padding-bottom:15px; */
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
   position:relative;
   cursor: pointer;
@@ -1098,7 +1117,7 @@ a.thumbnail-vid img{
     object-fit: contain;
 }
 .light .icon {
-    filter: invert(1);
+    filter: invert(.5);
 }
 .social-icons img{
     width: 22px;
@@ -1302,7 +1321,7 @@ div#modal-container {
   .ring i {
     position: absolute;
     inset: 0;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     transition: 1s;
   }
   .ring i:nth-child(1) {
@@ -1349,7 +1368,7 @@ div#modal-container {
   }
   .login h2 {
     font-size: 2em;
-    color: #fff;
+    color: var(--white);
   }
   .login .inputBx {
     position: relative;
@@ -1360,16 +1379,17 @@ div#modal-container {
     width: 100%;
     padding: 12px 20px;
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 6px;
     font-size: 1.2em;
-    color: #fff;
+    color: var(--white);
     box-shadow: none;
     outline: none;
   }
 
   .login .inputBx input::placeholder, .login .inputBx textarea::placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--white);
+    opacity: .8;
   }
   .login .links {
     position: relative;
@@ -1563,8 +1583,8 @@ div#modal-container {
     }
     
     .banner__item--1{
-      background-image: url('../images/handsome-serious-calm-guy-with-dark.png');
-      /* background-image: url('https://media.tenor.com/m4j29SAo0DgAAAAe/suraj-chattambinadu.png'); */
+      /* background-image: url('../images/handsome-serious-calm-guy-with-dark.png'); */
+      background-image: url('../images/student5.png');
 
       grid-column: 1 / 1;
       grid-row: 1 / span 3;
@@ -1572,10 +1592,11 @@ div#modal-container {
       background-size: cover;
       border-radius:60px;
       background-color: #6e1fed;
-      background-position: center;
+      /* background-position: center; */
+      background-position: bottom;
     }
     .banner__item--2{
-      background-image: url('../images/vertical-shot-of-young-european-woman-in-glasses.png');
+        background-image: url('../images/student2.png');
       /* background-image: url('https://i.ytimg.com/vi/PydMZnfcexU/maxresdefault.jpg'); */
 
       grid-column: 1 / 1;
@@ -1584,9 +1605,10 @@ div#modal-container {
       background-size: cover;
       border-radius:60px;
       background-color: #219653;
+      background-position: center;
     }
     .banner__item--3{
-        background-image: url('../images/pretty-young-asian-woman-makes-meditating.png');
+        background-image: url('../images/student3.png');
         /* background-image: url('https://media.licdn.com/dms/image/C5103AQHJhxxEu8u5pg/profile-displayphoto-shrink_800_800/0/1518847584705?e=2147483647&v=beta&t=jVBqIVc5TTYhGMjAeIpwOvo85BKzSSoFnmvK8er1fbw'); */
       grid-column: 2 / 2;
       grid-row: 1 / span 2;
@@ -1597,7 +1619,7 @@ div#modal-container {
     }
     .banner__item--4{
 
-      background-image: url('../images/positive-dark-skinned-woman-dressed.png');
+      background-image: url('../images/student1.png');
       grid-column: 2 / 2;
       grid-row: 6 / 3;
       background-repeat:no-repeat;
@@ -1607,13 +1629,14 @@ div#modal-container {
     }
     .banner__item--5{
       
-      background-image: url('../images/positive-smiling-handsome-caucasian-man-looks.png');
+      background-image: url('../images/student4.png');
       grid-column: 3 / span 2;
       grid-row: 5 / 2;
       background-repeat:no-repeat;
       background-size: cover;
       border-radius:60px;
       background-color: #f4b840;
+      /* background-position: bottom; */
     }
   
 
@@ -1728,6 +1751,8 @@ justify-content: center;
 .banner-mob{
     display: none;
     width: 100%;
+    max-width: 400px;
+    height: 100%;
 }
 .whatsapp{
     width: 45px;
@@ -1756,5 +1781,7 @@ justify-content: center;
     width: 25px;
     height: 25px;
 }
-
+.sub-text, .sub-text2{
+    transition: .4s;
+}
 

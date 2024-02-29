@@ -122,7 +122,9 @@ a {
 a:hover {
 	color: var(--red)
 }
-
+.md-pl-50{
+    padding-left: 50px;
+}
 .flex-align {
 	display: flex;
 	align-items: center;
@@ -151,8 +153,12 @@ a:hover {
 	color: #fff;
 	font-weight: 500;
     animation: glow 1s ease-in infinite;
+    position: relative;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
 }
-/* .btn-site::before {
+.btn-site::before {
 
     background: var(--red);
     border-radius: inherit;
@@ -165,8 +171,15 @@ a:hover {
     top: 0;
     right: 0;
     z-index: -1;
+  
+  
+}
+.btn-site:hover::before{
+    filter: blur(10px);
+    opacity: 1;
   }
-.btn-site2::before {
+
+ .btn-site2::before {
 
     background: var(--white);
     border-radius: inherit;
@@ -179,8 +192,12 @@ a:hover {
     top: 0;
     right: 0;
     z-index: -1;
-  } */
-  .btn-site-glow {
+  }
+  .btn-site2:hover::before{
+    filter: blur(10px);
+    opacity: .7;
+  }
+  /* .btn-site-glow {
     background: #6c0004;
     border-radius: inherit;
     content: '';
@@ -192,7 +209,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 /* .btn-site-glow2 {
     background: #9a9a9a99;
     border-radius: inherit;
@@ -547,6 +564,9 @@ a:hover {
 }
 
 @media (max-width:991px) {
+    .md-pl-50 {
+        padding-left: 0px;
+    }
     .banner {
 
         max-width: 600px;
@@ -704,9 +724,16 @@ a:hover {
 	.footer-column .nav2 {
 		width: 50%
 	}
+    .banner-join:after {
+        width: 150px;
+        height: 40px;
+        top: 50px;
+
+    }
 }
 
 @media (max-width:768px) {
+
 	.column-box span {
 		font-family: 'Poppins', sans-serif;
 
@@ -1001,5 +1028,13 @@ a:hover {
 .each-title{
     font-weight: 500;
     font-size: 14px;
+}
+.btn-container {
+
+    gap: 10px;
+
+}
+.hero-left {
+    padding: 0 15px;
 }
 }

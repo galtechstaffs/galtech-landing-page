@@ -94,7 +94,7 @@ top_action1.forEach((element, i) => {
             scrollTrigger: {
                 trigger: element,
                 start: 'top 90%',
-                end: 'top 60%',
+                end: 'top 100%',
                 scrub: true,
                 markers: false,
                 toggleActions: 'play play reverse reverse'

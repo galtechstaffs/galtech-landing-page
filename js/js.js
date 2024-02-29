@@ -69,14 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
         var viewMoreBtns = document.querySelectorAll('.viewMoreBtn');
 
         textContainers.forEach(function (textContainer, index) {
-            textContainer.style.maxHeight = '126px'; // Initialize the max height
+            textContainer.style.maxHeight = '125px'; // Initialize the max height
 
             viewMoreBtns[index].addEventListener('click', function () {
                 if (textContainer.style.maxHeight) {
                     textContainer.style.maxHeight = null;
                     viewMoreBtns[index].textContent = 'Read Less';
                 } else {
-                    textContainer.style.maxHeight = '130px';
+                    textContainer.style.maxHeight = '125px';
                     viewMoreBtns[index].textContent = 'Read More';
                 }
             });
