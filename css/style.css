@@ -21,8 +21,8 @@
 .banner-join:after {
     content: '';
     position: absolute;
-    width: 300px;
-    height: 100px;
+    width: 250px;
+    height: 70px;
     background: url(../images/arrow2.png);
     z-index: 9999;
     top: 60px;
@@ -43,14 +43,15 @@
     width: fit-content;
     display: block;
     position: relative;
-    background: linear-gradient(180deg, white, #a8a8a8);
-    padding: 7px 25px;
+    background: linear-gradient(180deg, white, #5fd1d7);
+    padding: 5px 15px;
     margin: 10px 0 10px 10px;
     transform: rotate(-3deg);
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     border-radius: 6px;
-    box-shadow: 5px 5px 0px 0 var(--red);
+    /* box-shadow: 5px 5px 0px 0 var(--red); */
     text-transform: uppercase;
+    font-weight: 800;
    
 }
 .light .head-attention {
@@ -1608,7 +1609,7 @@ div#modal-container {
       background-position: center;
     }
     .banner__item--3{
-        background-image: url('../images/student3.png');
+        background-image: url('../images/student6.png');
         /* background-image: url('https://media.licdn.com/dms/image/C5103AQHJhxxEu8u5pg/profile-displayphoto-shrink_800_800/0/1518847584705?e=2147483647&v=beta&t=jVBqIVc5TTYhGMjAeIpwOvo85BKzSSoFnmvK8er1fbw'); */
       grid-column: 2 / 2;
       grid-row: 1 / span 2;
@@ -1616,6 +1617,7 @@ div#modal-container {
       background-size: cover;
       border-radius:60px;
       background-color: #60d3d9;
+      background-position: bottom;
     }
     .banner__item--4{
 
