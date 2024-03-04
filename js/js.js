@@ -23,7 +23,7 @@ window.addEventListener('scroll', function () {
 // });
 
 document.querySelector(".each-accordionbox:first-child").classList.add("active");
-document.querySelector(".each-accordionbox:first-child .each-text").style.display = "block";
+document.querySelector(".each-accordionbox:first-child .each-text").style.display = "flex";
 document.querySelectorAll(".each-title").forEach(function (title) {
     title.addEventListener("click", function () {
         var accordionBox = this.parentNode;
@@ -40,7 +40,7 @@ document.querySelectorAll(".each-title").forEach(function (title) {
                 box.classList.remove("active");
             });
             accordionBox.classList.add("active");
-            accordionText.style.display = "block";
+            accordionText.style.display = "flex";
         }
     });
 });
@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+
+    
 
 });
 

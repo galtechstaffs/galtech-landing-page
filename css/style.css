@@ -579,7 +579,7 @@ h1.heading{
     border-bottom: 1px solid var(--gray2);
 }
 .light div#tools .scrolling-text_inner {
-    background-color: #00000024;
+    background-color: #e5e1d8;
     mask-image: none!important;
     border: none;
 }
@@ -893,6 +893,7 @@ a.thumbnail-vid img{
   }
 .each-accordionbox h3{
     position: relative;
+    text-align: left;
 }
 .each-accordionbox h3::before{
   content:'+';
@@ -913,6 +914,7 @@ a.thumbnail-vid img{
   color:var(--white);
   padding:15px 70px 15px;
   font-weight: 600;
+  
 
 /*     position: relative;
     top: -16px;
@@ -921,7 +923,13 @@ a.thumbnail-vid img{
 .accordion-section p{
   padding:0px 40px 20px;
   display:none;
+  text-align: left;
 }
+.accordion-section .programe{
+    padding:20px 40px 20px 40px;
+    text-align: left;
+    display: none;
+  }
 .each-accordionbox.active{
   /* background:#0e1019ed; */
   color:#ffffff;
@@ -1730,7 +1738,56 @@ justify-content: center;
 
   }
 /* gsap style end */
+.ad-container {
+    position: relative;
+    background: url(https://www.carrollcc.edu/wp-content/uploads/technical-professional-studies-associate-drgree-carroll-community-college-scaled.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
 
+}
+.light .ad-container {
+    position: relative;
+    background: initial;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+
+}
+.ad-container .container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    position: relative;
+}
+.ad-container:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: var(--black);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: 1;
+    opacity: .8;
+}
+.light .ad-container:after{
+    opacity: .05;
+}
+.ad-container h2{
+    color: var(--white);
+}
+.ad-container a{
+    white-space: nowrap;
+    min-width: auto;
+
+}
 .switch{
     position: fixed;
     right: 0px;
@@ -1788,3 +1845,20 @@ justify-content: center;
     transition: .4s;
 }
 
+.talk-btn {
+    color: white;
+    background: var(--red);
+    color: white;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    bottom: -50px;
+    transition: .3s;
+    display: none;
+}
+
+.scroll-start .talk-btn{
+    bottom: 0;
+}
