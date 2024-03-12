@@ -1486,14 +1486,14 @@ div#modal-container {
 
   }
 .card:nth-child(1):before {
-  background-image: url(https://img.freepik.com/free-photo/full-shot-smiley-students-library_23-2149647046.jpg);
+  background-image: url(../images/join1.avif);
   background-position: center;
 }
 .card:nth-child(2):before {
-  background-image: url(https://media.istockphoto.com/id/1371896330/photo/happy-asian-woman-in-his-graduation-day.webp?b=1&s=170667a&w=0&k=20&c=apaOUEdB5N5xYWUstQ5eVbmUHJtq9urMK68CTF0XNbk=);
+  background-image: url(../images/join2.webp);
 }
 .card:nth-child(3):before {
-  background-image: url(https://www.avivaindia.com/sites/default/files/9%20to%205.jpg);
+  background-image: url(../images/join3.jpg);
 }
 
 .content {
@@ -1706,7 +1706,7 @@ justify-content: center;
   .text span{
 
     width: 100%;
-    color: rgb(182, 182, 182, 0.2);
+    color: rgb(182, 182, 182, 0);
     background: linear-gradient(to right, var(--red), var(--red)) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
