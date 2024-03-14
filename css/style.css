@@ -1022,7 +1022,7 @@ a.thumbnail-vid img{
     position: relative;
 }
 .testimonial p{
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .carousel-inner {
     display: flex;
@@ -1034,6 +1034,7 @@ a.thumbnail-vid img{
 .carousel-item {
     width: 33.3%;
     padding: 20px;
+    position: relative;
 }
 .testimonial4_slide h4 {
     margin: 0 auto;
