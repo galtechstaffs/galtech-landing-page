@@ -746,6 +746,12 @@ a:hover {
 	.container .btn-site {
 		margin: 10px auto;
 	}
+	.min-990{
+		display: none;
+	}
+	.max-990{
+		display: block;
+	}
 }
 
 @media (max-width:768px) {
@@ -1062,6 +1068,16 @@ a:hover {
 }
 .hero-left {
     padding: 0 15px;
+}
+p {
+
+    font-size: 14px;
+    line-height: 22px;
+
+}
+.each-title {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 }

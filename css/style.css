@@ -1,3 +1,5 @@
+
+
 .gradient-text {
     /* background: -webkit-linear-gradient(#7c1824,  var(--red));
     -webkit-background-clip: text;
@@ -913,7 +915,7 @@ a.thumbnail-vid img{
 .each-title{
   color:var(--white);
   padding:15px 70px 15px;
-  font-weight: 600;
+  font-weight: 300;
   
 
 /*     position: relative;
@@ -1713,8 +1715,8 @@ justify-content: center;
   .text span{
 
     width: 100%;
-    color: rgb(182, 182, 182, 0);
-    background: linear-gradient(to right, var(--red), var(--red)) no-repeat;
+    color: rgb(182, 182, 182, 0.2);
+    background: linear-gradient(to right, #e10c18, #e10c18) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
@@ -1868,4 +1870,7 @@ justify-content: center;
 
 .scroll-start .talk-btn{
     bottom: 0;
+}
+.max-990{
+    display:none;
 }
