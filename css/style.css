@@ -579,7 +579,7 @@ h1.heading{
     border-bottom: 1px solid var(--gray2);
 }
 .light div#tools .scrolling-text_inner {
-    background-color: #e5e1d8;
+    background-color: #d51c231c;
     mask-image: none!important;
     border: none;
 }
@@ -1017,9 +1017,12 @@ a.thumbnail-vid img{
         background-size: cover;
         background-attachment: fixed;
 }
-.testimonial *{
+.testimonial .container{
     z-index: 9;
     position: relative;
+}
+.testimonial p{
+    padding-bottom: 60px;
 }
 .carousel-inner {
     display: flex;
@@ -1032,15 +1035,18 @@ a.thumbnail-vid img{
     width: 33.3%;
     padding: 20px;
 }
-.testimonial4_slide h4{
+.testimonial4_slide h4 {
     margin: 0 auto;
     padding: 5px 20px;
     background: var(--red);
     width: fit-content;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .carousel-inner:before{
@@ -1646,7 +1652,7 @@ div#modal-container {
       background-repeat:no-repeat;
       background-size: cover;
       border-radius:60px;
-      background-color: #f4b840;
+      background-color: #d29a11;
       /* background-position: bottom; */
     }
   
