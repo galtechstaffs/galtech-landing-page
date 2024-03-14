@@ -1012,7 +1012,7 @@ a.thumbnail-vid img{
 .testimonial {
 
     position: relative;
-    background: url(https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/1qMEtj3buEV49YYBqUx39g/92735dd230977db061f6e4a4a5ac6b44/GettyImages-1270398183.jpg?fit=thumb);
+    background: url(../images/testi.webp);
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
@@ -1050,6 +1050,8 @@ a.thumbnail-vid img{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .carousel-inner:before{
@@ -1615,8 +1617,6 @@ div#modal-container {
     }
     .banner__item--2{
         background-image: url('../images/student2.png');
-      /* background-image: url('https://i.ytimg.com/vi/PydMZnfcexU/maxresdefault.jpg'); */
-
       grid-column: 1 / 1;
       grid-row: 4 / span 2;
       background-repeat:no-repeat;
@@ -1627,7 +1627,6 @@ div#modal-container {
     }
     .banner__item--3{
         background-image: url('../images/student6.png');
-        /* background-image: url('https://media.licdn.com/dms/image/C5103AQHJhxxEu8u5pg/profile-displayphoto-shrink_800_800/0/1518847584705?e=2147483647&v=beta&t=jVBqIVc5TTYhGMjAeIpwOvo85BKzSSoFnmvK8er1fbw'); */
       grid-column: 2 / 2;
       grid-row: 1 / span 2;
       background-repeat:no-repeat;
@@ -1749,7 +1748,7 @@ justify-content: center;
 /* gsap style end */
 .ad-container {
     position: relative;
-    background: url(https://www.carrollcc.edu/wp-content/uploads/technical-professional-studies-associate-drgree-carroll-community-college-scaled.jpg);
+    background: url(../images/testi.webp);
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
