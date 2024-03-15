@@ -1816,6 +1816,9 @@ justify-content: center;
 .light .switch img{
     filter: invert(1);
 }
+.light .dark-only{
+   display: none;
+}
 .banner-mob{
     display: none;
     width: 100%;
