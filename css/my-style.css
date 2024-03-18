@@ -559,6 +559,9 @@ a:hover {
 		background-repeat: no-repeat;
 		background-size: contain
 	}
+	.last-not-after::after {
+		display: none;
+	}
     .light .join-card:not(:last-child)::after{
         filter: invert(1);
     }
@@ -756,7 +759,9 @@ a:hover {
 
 @media (max-width:768px) {
 	
-
+	.switch{
+		top: 100px;
+	}
 	.column-box span {
 		font-family: 'Poppins', sans-serif;
 
