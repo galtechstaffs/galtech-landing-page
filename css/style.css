@@ -1151,6 +1151,7 @@ a.thumbnail-vid img{
 .footer-child h6{
     color: var(--white);
     font-weight: 400;
+    font-size: 14px;
 }
 .footer-column{
     padding: 30px;
