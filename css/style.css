@@ -690,7 +690,7 @@ h1.heading{
     transition: .3s;
 }
 .section{
-    padding: 100px 0 0 0 ;
+    padding: 50px 0 50px 0 ;
 }
 /* row end */
 /* overview start */
@@ -1205,7 +1205,7 @@ a.thumbnail-vid img{
     display: flex;
     align-items: center;
     max-width: 850px;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 40px;
         border: 1px solid  var(--gray2);
@@ -1256,15 +1256,15 @@ a.thumbnail-vid img{
     margin-top: 20px;
 }
 .join-card-img{
-    width: 180px;
+    width: 140px;
 }
 .join-card-img img{
-    width: 180px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     object-fit: contain;
 }
 .join-card-content{
-    width: calc(100% - 220px);
+    width: calc(100% - 180px);
 }
 .join-card span{
     position: relative;
