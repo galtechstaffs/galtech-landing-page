@@ -755,6 +755,18 @@ a:hover {
 	.max-990{
 		display: block;
 	}
+	.projects-row {
+
+		flex-wrap: nowrap;
+		overflow: auto;
+		width: 100%;
+		display: -webkit-inline-box;
+	}
+	.projects-row .card {
+		width: 420px;
+		padding: 24px;
+	}
+
 }
 
 @media (max-width:768px) {
@@ -967,6 +979,10 @@ a:hover {
         grid-row: 7 / 1;
 
       }
+	  .projects-row .card, .projects-row .card.w-50 {
+		width: 100%;
+	}
+	
      
 }
 
@@ -1081,8 +1097,11 @@ p {
 
 }
 .each-title {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.projects-row .card {
+	width: 280px;
 }
 
 }
@@ -1096,4 +1115,14 @@ p {
 	min-width: auto;
 
 }
+
 }
+@media (max-width:370px) {
+
+	.btn-container {
+		gap: 5px;
+	}
+	.hero-left {
+		padding: 0 0 0  10px;
+	}
+	}
