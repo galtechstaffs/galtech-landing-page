@@ -917,7 +917,7 @@ a.thumbnail-vid img{
 
 .each-title{
   color:var(--white);
-  padding:15px 70px 15px;
+  padding:15px 15px 15px 70px;
   font-weight: 300;
   
 
@@ -982,6 +982,8 @@ a.thumbnail-vid img{
     object-fit: cover;
     border-radius: 16px;
     /* height: 100%; */
+    max-height: 400px;
+    object-position: bottom;
 }
 /* choose end */
 
@@ -995,16 +997,16 @@ a.thumbnail-vid img{
 }
 .testimonial:after {
     position: absolute;
-    top: -0 !important;
+    top: 0 !important;
     left: 0;
     content: " ";
-    background:var(--black);
+    background:#000;
     background-size: 100% 100px;
     width: 100%;
     height: 100%;
     float: left;
     z-index: 1;
-    opacity: .8;
+    opacity: .7;
 
 }
 .light .testimonial:after {
@@ -1015,7 +1017,7 @@ a.thumbnail-vid img{
 .testimonial {
 
     position: relative;
-    background: url(../images/testi.webp);
+    background: url(../images/galtech-tec.jpg);
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
@@ -1027,7 +1029,7 @@ a.thumbnail-vid img{
     position: relative;
 }
 .testimonial p{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .carousel-inner {
     display: flex;
@@ -1470,7 +1472,7 @@ div#modal-container {
     
   }
 }
-.card:before {
+.who-can .card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1482,7 +1484,7 @@ div#modal-container {
   transition: transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
 }
-.card:after {
+.who-can .card:after {
   content: "";
   display: block;
   position: absolute;
@@ -1501,7 +1503,7 @@ div#modal-container {
 
   }
 .who-can .card:nth-child(1):before {
-  background-image: url(../images/join1.avif);
+  background-image: url(../images/graduates.jpg);
   background-position: center;
 }
 .who-can .card:nth-child(2):before {
@@ -1889,20 +1891,7 @@ justify-content: center;
 .projects{
     position: relative;
 }
-.projects::before {
-        --line: hsl(0 0% 95% / 0.15);
-        --size: 60px;
-        content: "";
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        background: linear-gradient(90deg, var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size), linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
-        -webkit-mask: linear-gradient(-15deg, transparent 30%, white);
-        mask: linear-gradient(-15deg, transparent 30%, white);
-        top: 0;
-        z-index: -1;
-        transform: translate3d(0, 0, -100vmin);
-    }
+
 
     .projects-row {
         display: flex;
@@ -1925,46 +1914,22 @@ justify-content: center;
       .projects-row  .card.w-50 {
         width: calc(50% - 10px);
       }
-      .projects-row  .card:hover {
-        box-shadow: inset 0 0 6px hsla(0,0%,100%,0.4);
-      }
-      
-      .projects-row  .card::before {
-          content: "";
-          position: absolute;
-          width: 50%;
-          height: 1px;
-          background: linear-gradient(45deg, #ffffff00, #ffffff 50%, #ffffff00);
-          top: -1px;
-          right: 20px;
-          transition: all 1.4s ease;
-      }
-      
-      .projects-row  .card:hover::before {
-          right: calc(50% - 20px);
-      }
-      
-      .projects-row  .card::after {
-          content: "";
-          position: absolute;
-          width: 50%;
-          height: 1px;
-          background: linear-gradient(45deg, #ffffff00, #ffffff87 50%, #ffffff00);
-          bottom: -1px;
-          left: 20px;
-          transition: all 1.4s ease;
-      }
+
+
       .light .projects-row .card {
         background: linear-gradient(193deg, #b7545924 53%, #c82b3536 100%);
     }
-      .projects-row  .card:hover::after {
-          left: calc(50% - 20px);
-      }
+
       .projects-row .card img{
         width: 60px;
         height: 60px;
+        
       }
+      .projects-row .card:hover{
+        transform: scale(1.02);
+        transition: .3s;
 
+      }
       .flex-div{
         display: flex;
         gap:10px;

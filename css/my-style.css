@@ -766,6 +766,15 @@ a:hover {
 		width: 420px;
 		padding: 24px;
 	}
+	.row.development-row {
+		gap: 10px;
+	}
+	.each-accordionbox h3::before {
+		padding: 0px 5px;
+	}
+	.each-title {
+		padding: 15px 15px 15px 56px;
+	}
 
 }
 
@@ -842,6 +851,18 @@ a:hover {
 	  .last-footer{
 		padding-bottom: 40px;
 	  }
+	  .section {
+		padding: 20px 0 20px 0;
+	}
+	.container.hero-container {
+		padding-bottom: 20px;
+	}
+	.head {
+		margin-bottom: 0px;
+	}
+	.join-row {
+		margin-top: 20px;
+	}
 }
 
 @media (max-width:576px) {
