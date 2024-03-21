@@ -18,6 +18,7 @@ html {
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
     height: auto;
+	user-select: none;
 }
 .site-body {
     overflow: hidden;
@@ -1133,6 +1134,13 @@ p {
 .projects-row .card {
 	width: 280px;
 }
+.btn-site, .btn-site2 {
+	margin: 0 auto;
+
+}
+.hero-left {
+    gap: 20px;
+}
 
 }
 
@@ -1145,6 +1153,7 @@ p {
 	min-width: auto;
 
 }
+
 .marquee-sec.scrolling-text {
     mask-image: linear-gradient(to left, transparent 0%, black 18%);
 }
