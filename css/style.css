@@ -1262,7 +1262,7 @@ a.thumbnail-vid img{
 }
 .join-card-img img{
     width: 130px;
-    height: 130px;
+    /* height: 130px; */
     object-fit: contain;
 }
 .join-card-content{

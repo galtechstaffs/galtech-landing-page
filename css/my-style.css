@@ -61,7 +61,8 @@ img {
 
 ::-webkit-scrollbar {
 	width: 8px;
-	background: var(--bg)
+	background: var(--bg);
+	height: 0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -876,6 +877,7 @@ a:hover {
 		width: 100%;
 		gap: 50px;
 		overflow-x: auto;
+		padding-bottom: 30px;
 
 	}
 
