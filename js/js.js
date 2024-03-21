@@ -67,6 +67,24 @@ document
     document.body.classList.remove("open");
   });
 
+  
+  document.querySelectorAll(".btn-modal2").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var body = document.body;
+  
+      // Toggle the class "open" on the body element
+      body.classList.toggle("open2");
+    });
+  });
+  
+  document
+    .querySelector(".close-btn2")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+  
+      document.body.classList.remove("open2");
+    });
+
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth < 990) {
     var textContainers = document.querySelectorAll(".textContainer");
