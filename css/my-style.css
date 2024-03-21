@@ -1147,3 +1147,11 @@ p {
 		padding: 0 0 0  10px;
 	}
 	}
+
+	@media (max-width: 350px){
+.btn-site, .btn-site2 {
+    padding: 8px 8px;
+    font-size: 12px;
+    line-height: 12px;
+}
+	}
