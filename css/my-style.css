@@ -1003,7 +1003,10 @@ a:hover {
 	  .projects-row .card, .projects-row .card.w-50 {
 		width: 100%;
 	}
-	
+	.scrolling-text_inner{
+		width: 100%;
+		overflow: auto;
+	}
      
 }
 
@@ -1136,7 +1139,12 @@ p {
 	min-width: auto;
 
 }
-
+.marquee-sec.scrolling-text {
+    mask-image: linear-gradient(to left, transparent 0%, black 18%);
+}
+.placement-marquee {
+    mask-image: linear-gradient(to right, transparent 0%, black 18%);
+}
 }
 @media (max-width:370px) {
 
@@ -1153,5 +1161,15 @@ p {
     padding: 8px 8px;
     font-size: 12px;
     line-height: 12px;
+	height: 36px;
+}
+.whatsapp {
+    width: 40px;
+
+    height: 40px;
+}
+.whatsapp img {
+    width: 23px;
+    height: 23px;
 }
 	}
