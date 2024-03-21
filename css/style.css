@@ -1029,7 +1029,7 @@ a.thumbnail-vid img{
     position: relative;
 }
 .testimonial p{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .carousel-inner {
     display: flex;
@@ -1052,7 +1052,7 @@ a.thumbnail-vid img{
     justify-content: center;
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase;
@@ -1942,5 +1942,18 @@ justify-content: center;
 
 
 
-
-  
+      .Stars {
+        --percent: calc(var(--rating) / 5 * 100%);
+        display: inline-block;
+        font-size: var(--star-size);
+        font-family: Times;
+        line-height: 1;
+      }
+      .Stars::before {
+        content: "★★★★★";
+        letter-spacing: 3px;
+        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
