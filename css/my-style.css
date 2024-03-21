@@ -562,7 +562,7 @@ a:hover {
 		width: 40px;
 		left: 50%;
 		transform: translateX(-50%);
-		background: url(../images/arrow-shape2.png);
+		background: url(../images/arrow-shape2.webp);
 		background-repeat: no-repeat;
 		background-size: contain
 	}
