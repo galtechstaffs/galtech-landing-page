@@ -85,6 +85,8 @@ document
       document.body.classList.remove("open2");
     });
 
+
+    
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth < 990) {
     var textContainers = document.querySelectorAll(".textContainer");
