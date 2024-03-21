@@ -743,12 +743,10 @@ a:hover {
     .banner-join:after {
         width: 150px;
         height: 40px;
-        top: 50px;
+        top: 55px;
 
     }
-	.container .btn-site {
-		margin: 10px auto;
-	}
+
 	.min-990{
 		display: none;
 	}
@@ -1130,7 +1128,7 @@ p {
 
 }
 
-@media (max-width:390px) {
+@media (max-width:400px) {
 
 .btn-site, .btn-site2 {
     padding: 12px 14px;
@@ -1156,7 +1154,7 @@ p {
 	}
 	}
 
-	@media (max-width: 360px){
+	/* @media (max-width: 360px){
 .btn-site, .btn-site2 {
     padding: 8px 8px;
     font-size: 12px;
@@ -1172,4 +1170,4 @@ p {
     width: 23px;
     height: 23px;
 }
-	}
+	} */
